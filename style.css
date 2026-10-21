@@ -378,7 +378,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 
   .hamburger { display: block; }
 
@@ -2855,7 +2855,7 @@ body::before {
 .video-fallback a:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 2px; border-radius: 4px; }
 
 /* ---------- Mobile hardening ---------- */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .hamburger { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .nav-link { padding-block: 0.6rem; }
   .chat-close-btn { min-width: 44px; min-height: 44px; }
@@ -2917,3 +2917,73 @@ body::before {
 
 /* Tab labels are English: keep the "3." number on the correct side */
 .tab-btn { direction: ltr; }
+
+
+/* ==================================================================
+   PHASE 5 — SCROLL PROGRESS LINE + TAB BAR OVERFLOW FIX
+   ================================================================== */
+
+/* Page scroll progress: fixed, transform-only (no layout), never intercepts input.
+   The page is RTL, so it fills from the right edge (start of reading). */
+.lx-scroll-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 1100; pointer-events: none;
+  transform: scaleX(0); transform-origin: right center; will-change: transform;
+  background: linear-gradient(270deg, var(--accent-cyan), var(--accent-purple));
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.45);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lx-scroll-progress { transition: transform 0.12s linear; }
+}
+
+/* Lesson tab bar: the 8 tab labels are wider than the container at every width, which showed a
+   native horizontal scrollbar (a second "line") under the tabs. Wide screens: wrap so all steps are
+   visible. Narrower screens: keep touch/keyboard scrolling but hide the native scrollbar track;
+   the step progress line below the tabs is the visual indicator. */
+.tabs-nav { scrollbar-width: none; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.tabs-nav::-webkit-scrollbar { display: none; }
+
+
+/* ==================================================================
+   PHASE 6 — TOPICS LAYOUT, STEP PROGRESS LABEL, HEADER, SCROLLBAR
+   ================================================================== */
+
+/* ---------- Header: brand on the inline-start (right in RTL), nav on the inline-end (left) ----------
+   The mobile menu now starts at 1100px (was 768px): between 769px and ~900px the five links wrapped
+   onto two lines and touched the brand. 1101-1279px keeps one row by dropping the link icons. */
+.header-container { gap: 1.5rem; }
+.brand-logo { flex: 0 0 auto; }
+.nav-menu { margin-inline-start: auto; flex-wrap: nowrap; min-width: 0; }
+.nav-link { white-space: nowrap; }
+@media (min-width: 1101px) and (max-width: 1279px) {
+  .nav-link i { display: none; }
+  .nav-menu { gap: 1.1rem; }
+}
+
+/* ---------- Lesson topics ----------
+   641px+: all eight topics are visible in an even grid (2 x 4, then 4 x 2 from 1180px) instead of an
+   uneven wrapped row. Up to 640px: one compact swipeable strip (native scrollbar hidden). */
+@media (min-width: 641px) {
+  .tabs-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; overflow: visible; }
+  .tab-btn { display: flex; align-items: center; justify-content: center; text-align: center; white-space: normal; line-height: 1.35; padding-block: 0.5rem; }
+}
+@media (min-width: 1180px) {
+  .tabs-nav { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* Step progress: caption + line, one indicator that mirrors the active topic */
+.lx-progress { display: flex; align-items: center; gap: 0.9rem; margin: 0.4rem 0 1.8rem; }
+.lx-step-label { flex: 0 0 auto; margin: 0; font-size: 0.85rem; font-weight: 700; color: var(--text-muted); white-space: nowrap; }
+.lx-progress .lx-track { flex: 1 1 auto; margin: 0; }
+
+/* ---------- Page scroll line: the visible "line" at the right edge is the browser's native
+   vertical scrollbar in its light default theme. Keep it (scrolling must work) but make it
+   thin and dark so it matches the page. ---------- */
+html { scrollbar-width: thin; scrollbar-color: rgba(148, 163, 184, 0.45) #0f172a; }
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.4); border-radius: 8px; border: 2px solid #0f172a; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(0, 210, 255, 0.5); }
+}
+/* Top progress line: quieter (no glow, no easing animation) */
+.lx-scroll-progress { height: 2px; box-shadow: none; transition: none; }

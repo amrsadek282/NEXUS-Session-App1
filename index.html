@@ -30,8 +30,7 @@
 
        Description text below is PROPOSED copy and still needs approval. -->
 
-  <meta name="description"
-    content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
+  <meta name="description" content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
 
   <meta property="og:type" content="website">
 
@@ -41,8 +40,7 @@
 
   <meta property="og:title" content="NEXUS | Level 1 · Session 01: The Computer: From Input to Execution">
 
-  <meta property="og:description"
-    content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
+  <meta property="og:description" content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
 
   <meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/">
 
@@ -58,8 +56,7 @@
 
   <meta name="twitter:title" content="NEXUS | Level 1 · Session 01: The Computer: From Input to Execution">
 
-  <meta name="twitter:description"
-    content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
+  <meta name="twitter:description" content="جلسة تفاعلية بتشرح إزاي الكمبيوتر بيشتغل من الإدخال للتنفيذ، بمجسمات تفاعلية واختبار قصير.">
 
   <meta name="twitter:image" content="https://YOUR-DOMAIN.vercel.app/assets/og-image.png">
 
@@ -73,19 +70,20 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Fira+Code:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
+  <!-- Page scroll progress (decorative; tracks position in the whole document) -->
+  <div class="lx-scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 
 
@@ -101,7 +99,7 @@
 
         <span class="logo-text">NEXUS</span>
 
-        <!-- <span class="badge">LVL 1 - SEC 01</span> -->
+        <span class="badge">LVL 1 - SEC 01</span>
 
       </div>
 
@@ -117,15 +115,13 @@
 
         <a href="#video-summary" class="nav-link"><i class="fa-solid fa-play" aria-hidden="true"></i> فيديو الملخص</a>
 
-        <a href="#quiz" class="nav-link"><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i> الاختبار
-          التفاعلي</a>
+        <a href="#quiz" class="nav-link"><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i> الاختبار التفاعلي</a>
 
       </nav>
 
 
 
-      <button type="button" class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false"
-        aria-controls="navMenu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
 
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
 
@@ -153,16 +149,13 @@
 
         <h1 class="hero-title">The NEXUS Genesis &amp; Computer Anatomy</h1>
 
-        <p class="hero-subtitle">الكمبيوتر مبيفهمش زي البني آدم، ومع كده بيدّيك النتيجة. هنتتبّع الرحلة من ضغطة الزرار
-          لحد ما النتيجة تظهر على الشاشة.</p>
+        <p class="hero-subtitle">الكمبيوتر مبيفهمش زي البني آدم، ومع كده بيدّيك النتيجة. هنتتبّع الرحلة من ضغطة الزرار لحد ما النتيجة تظهر على الشاشة.</p>
 
         <div class="hero-actions">
 
-          <a href="#modules" class="btn btn-primary"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> ابدأ
-            بالسؤال</a>
+          <a href="#modules" class="btn btn-primary"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> ابدأ بالسؤال</a>
 
-          <a href="#video-summary" class="btn btn-glass"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> شاهد
-            الملخص</a>
+          <a href="#video-summary" class="btn btn-glass"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> شاهد الملخص</a>
 
         </div>
 
@@ -188,8 +181,7 @@
 
         <div class="lx-overview-card">
 
-          <p class="lx-overview-text">رحلة سريعة لفهم ما يحدث داخل الكمبيوتر، من المكونات الأساسية إلى طريقة تنفيذ
-            التعليمات.</p>
+          <p class="lx-overview-text">رحلة سريعة لفهم ما يحدث داخل الكمبيوتر، من المكونات الأساسية إلى طريقة تنفيذ التعليمات.</p>
 
           <ul class="lx-overview-tags" aria-label="محاور الجلسة">
 
@@ -229,33 +221,31 @@
 
         <div class="tabs-nav" id="modulesTabs" role="tablist" aria-label="خطوات الدرس">
 
-          <button type="button" class="tab-btn active" role="tab" id="tabbtn-1" aria-controls="tab-1"
-            aria-selected="true" data-tab="tab-1">1. Opening Inquiry</button>
+          <button type="button" class="tab-btn active" role="tab" id="tabbtn-1" aria-controls="tab-1" aria-selected="true" data-tab="tab-1">1. Opening Inquiry</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-2" aria-controls="tab-2" aria-selected="false"
-            tabindex="-1" data-tab="tab-2">2. User View vs. Engineer View</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-2" aria-controls="tab-2" aria-selected="false" tabindex="-1" data-tab="tab-2">2. User View vs. Engineer View</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-3" aria-controls="tab-3" aria-selected="false"
-            tabindex="-1" data-tab="tab-3">3. Input → Processing → Output</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-3" aria-controls="tab-3" aria-selected="false" tabindex="-1" data-tab="tab-3">3. Input → Processing → Output</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-4" aria-controls="tab-4" aria-selected="false"
-            tabindex="-1" data-tab="tab-4">4. Hardware, Software &amp; OS</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-4" aria-controls="tab-4" aria-selected="false" tabindex="-1" data-tab="tab-4">4. Hardware, Software &amp; OS</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-5" aria-controls="tab-5" aria-selected="false"
-            tabindex="-1" data-tab="tab-5">5. Memory Hierarchy</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-5" aria-controls="tab-5" aria-selected="false" tabindex="-1" data-tab="tab-5">5. Memory Hierarchy</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-6" aria-controls="tab-6" aria-selected="false"
-            tabindex="-1" data-tab="tab-6">6. CPU Architecture &amp; Buses</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-6" aria-controls="tab-6" aria-selected="false" tabindex="-1" data-tab="tab-6">6. CPU Architecture &amp; Buses</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-7" aria-controls="tab-7" aria-selected="false"
-            tabindex="-1" data-tab="tab-7">7. From Transistors to Binary</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-7" aria-controls="tab-7" aria-selected="false" tabindex="-1" data-tab="tab-7">7. From Transistors to Binary</button>
 
-          <button type="button" class="tab-btn" role="tab" id="tabbtn-8" aria-controls="tab-8" aria-selected="false"
-            tabindex="-1" data-tab="tab-8">8. The Instruction Cycle</button>
+          <button type="button" class="tab-btn" role="tab" id="tabbtn-8" aria-controls="tab-8" aria-selected="false" tabindex="-1" data-tab="tab-8">8. The Instruction Cycle</button>
 
         </div>
 
-        <div class="lx-track" aria-hidden="true"><span class="lx-track-fill" id="lxTrackFill"></span></div>
+        <div class="lx-progress">
+
+          <p class="lx-step-label" id="lxStepLabel">الخطوة 1 من 8</p>
+
+          <div class="lx-track" role="progressbar" aria-label="التقدم في خطوات الدرس" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" aria-valuetext="الخطوة 1 من 8"><span class="lx-track-fill" id="lxTrackFill"></span></div>
+
+        </div>
 
 
 
@@ -265,15 +255,13 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفهم إن الكمبيوتر بينفّذ قواعد محددة بدقة، مش بيفهم زي البني آدم.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفهم إن الكمبيوتر بينفّذ قواعد محددة بدقة، مش بيفهم زي البني آدم.</span></p>
 
             <h3 class="lx-title">Opening Inquiry</h3>
 
             <p class="lx-sub">هل الكمبيوتر بيفهم فعلاً؟</p>
 
-            <p class="lx-hook">لما بتسأل أداة زي ChatGPT سؤال، أو الموبايل يكمّل الكلمة اللي بتكتبها لوحده، بتحس إنه
-              «فاهم» قصدك. إيه اللي بيحصل فعلاً جوه الجهاز؟</p>
+            <p class="lx-hook">لما بتسأل أداة زي ChatGPT سؤال، أو الموبايل يكمّل الكلمة اللي بتكتبها لوحده، بتحس إنه «فاهم» قصدك. إيه اللي بيحصل فعلاً جوه الجهاز؟</p>
 
 
 
@@ -284,22 +272,18 @@
               <p class="lx-q" id="bigq-q">شغّلنا برنامج حسابي 5 مرات، بنفس الأرقام وبنفس الظروف. إيه اللي هيحصل؟</p>
 
               <div class="lx-check" id="bigq-check" data-correct="a" data-shuffle="true" data-max-attempts="2"
-                data-ok="إجابة ممتازة! الكمبيوتر بينفذ القواعد المكتوبة بالظبط، ومبيبتكرش حاجة من عنده."
-                data-bad="خلّينا نفكر فيها تاني: الكمبيوتر مبيبتكرش خطوات جديدة لوحده ومبيتعلمش من مجرد التكرار. هو بينفذ نفس التعليمات بنفس الدقة، وطالما مفيش حاجة اتغيرت هتطلع نفس النتيجة.">
+
+                   data-ok="إجابة ممتازة! الكمبيوتر بينفذ القواعد المكتوبة بالظبط، ومبيبتكرش حاجة من عنده."
+
+                   data-bad="خلّينا نفكر فيها تاني: الكمبيوتر مبيبتكرش خطوات جديدة لوحده ومبيتعلمش من مجرد التكرار. هو بينفذ نفس التعليمات بنفس الدقة، وطالما مفيش حاجة اتغيرت هتطلع نفس النتيجة.">
 
                 <div class="lx-options" role="radiogroup" aria-labelledby="bigq-q">
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span
-                      class="lx-key"></span><span>هيطلع نفس الناتج بالظبط في المرات الخمس، لأن المعالج بينفذ نفس
-                      التعليمات بدقة.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span class="lx-key"></span><span>هيطلع نفس الناتج بالظبط في المرات الخمس، لأن المعالج بينفذ نفس التعليمات بدقة.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span
-                      class="lx-key"></span><span>هيطلع نتايج مختلفة كل مرة، لأن الكمبيوتر بيحاول يبتكر طريقة أسرع
-                      للحل.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span class="lx-key"></span><span>هيطلع نتايج مختلفة كل مرة، لأن الكمبيوتر بيحاول يبتكر طريقة أسرع للحل.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span
-                      class="lx-key"></span><span>هيطلع نفس الناتج في أول مرة بس، وبعدها هيتغير لأن الكمبيوتر بيتعلم من
-                      التكرار.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span class="lx-key"></span><span>هيطلع نفس الناتج في أول مرة بس، وبعدها هيتغير لأن الكمبيوتر بيتعلم من التكرار.</span></button>
 
                 </div>
 
@@ -319,11 +303,9 @@
 
               <div class="lx-card">
 
-                <p class="lx-demo-label">جرّب بنفسك: البرنامج ده بيحسب <span class="en">12 × 7</span> ومفيهوش أي
-                  عشوائية.</p>
+                <p class="lx-demo-label">جرّب بنفسك: البرنامج ده بيحسب <span class="en">12 × 7</span> ومفيهوش أي عشوائية.</p>
 
-                <button type="button" class="btn btn-glass" id="runDemoBtn"><i class="fa-solid fa-play"
-                    aria-hidden="true"></i> شغّل البرنامج 5 مرات</button>
+                <button type="button" class="btn btn-glass" id="runDemoBtn"><i class="fa-solid fa-play" aria-hidden="true"></i> شغّل البرنامج 5 مرات</button>
 
                 <ol class="lx-runs" id="runDemoOut" aria-live="polite"></ol>
 
@@ -333,17 +315,11 @@
 
               <div class="lx-text">
 
-                <p>الكمبيوتر <strong class="en">Execution Machine</strong> (اسم بنستخدمه في NEXUS للتبسيط، مش مصطلح
-                  صناعي قياسي)، يعني آلة بتنفّذ خطوات متسلسلة ومحددة مسبقاً (<span class="en">Pre-defined
-                    Instructions</span>) كتبها مبرمجين ومهندسين. هو مبيفكرش في «معنى» الكلام ومبيحسش بيه.</p>
+                <p>الكمبيوتر <strong class="en">Execution Machine</strong> (اسم بنستخدمه في NEXUS للتبسيط، مش مصطلح صناعي قياسي)، يعني آلة بتنفّذ خطوات متسلسلة ومحددة مسبقاً (<span class="en">Pre-defined Instructions</span>) كتبها مبرمجين ومهندسين. هو مبيفكرش في «معنى» الكلام ومبيحسش بيه.</p>
 
-                <p>السلوك ده اسمه <strong class="en">Determinism</strong> (السلوك الحتمي): لما الكمبيوتر ياخد نفس
-                  الأوامر بنفس المدخلات وتحت نفس الظروف، بيدّي نفس النتيجة.</p>
+                <p>السلوك ده اسمه <strong class="en">Determinism</strong> (السلوك الحتمي): لما الكمبيوتر ياخد نفس الأوامر بنفس المدخلات وتحت نفس الظروف، بيدّي نفس النتيجة.</p>
 
-                <p><strong>طب والذكاء الاصطناعي؟</strong> نماذج الذكاء الاصطناعي بتعمل حسابات رياضية ضخمة على كميات
-                  هائلة من البيانات بسرعة عالية جداً، وده بيخلي الإجابات تبان ذكية. وإجاباتها بتتغير من مرة للتانية لأن
-                  البرنامج متصمم يضيف عنصر عشوائية مقصود وهو بيختار الكلمات. لكن المعالج نفسه بيفضل ينفّذ عمليات حسابية
-                  محددة، من غير وعي أو فهم ذاتي للمحتوى.</p>
+                <p><strong>طب والذكاء الاصطناعي؟</strong> نماذج الذكاء الاصطناعي بتعمل حسابات رياضية ضخمة على كميات هائلة من البيانات بسرعة عالية جداً، وده بيخلي الإجابات تبان ذكية. وإجاباتها بتتغير من مرة للتانية لأن البرنامج متصمم يضيف عنصر عشوائية مقصود وهو بيختار الكلمات. لكن المعالج نفسه بيفضل ينفّذ عمليات حسابية محددة، من غير وعي أو فهم ذاتي للمحتوى.</p>
 
               </div>
 
@@ -351,25 +327,19 @@
 
               <div class="lx-card lx-analogy">
 
-                <h4 class="lx-task-title"><i class="fa-solid fa-music" aria-hidden="true"></i> تشبيه: البيانو الآلي
-                  (<span class="en">Player Piano</span>)</h4>
+                <h4 class="lx-task-title"><i class="fa-solid fa-music" aria-hidden="true"></i> تشبيه: البيانو الآلي (<span class="en">Player Piano</span>)</h4>
 
-                <p>البيانو بيعزف مقطوعة جبارة بفضل شريط ورق مخروم بيمر جواه. المقطوعة بتطلع جميلة جداً، بس البيانو نفسه
-                  مش فاهم يعني إيه «موسيقى» ومش حاسس بالنغمات.</p>
+                <p>البيانو بيعزف مقطوعة جبارة بفضل شريط ورق مخروم بيمر جواه. المقطوعة بتطلع جميلة جداً، بس البيانو نفسه مش فاهم يعني إيه «موسيقى» ومش حاسس بالنغمات.</p>
 
-                <p class="lx-limit"><strong>حدود التشبيه:</strong> البيانو الآلي متصمم يعزف موسيقى بس. الكمبيوتر نظام
-                  عام (<span class="en">General Purpose System</span>)، تقدر تغيّر وظيفته بالكامل بتغيير البرامج (<span
-                    class="en">Software</span>).</p>
+                <p class="lx-limit"><strong>حدود التشبيه:</strong> البيانو الآلي متصمم يعزف موسيقى بس. الكمبيوتر نظام عام (<span class="en">General Purpose System</span>)، تقدر تغيّر وظيفته بالكامل بتغيير البرامج (<span class="en">Software</span>).</p>
 
               </div>
 
 
 
-              <p class="lx-takeaway"><strong>الخلاصة:</strong> الكمبيوتر آلة تنفيذ حتمية بتعتمد على القواعد، مش على
-                الفهم البشري.</p>
+              <p class="lx-takeaway"><strong>الخلاصة:</strong> الكمبيوتر آلة تنفيذ حتمية بتعتمد على القواعد، مش على الفهم البشري.</p>
 
-              <p class="lx-recap">باختصار: الكمبيوتر بينفذ الأوامر والقواعد البرمجية بسرعة ودقة عالية من غير فهم ذاتي
-                ولا وعي بشري.</p>
+              <p class="lx-recap">باختصار: الكمبيوتر بينفذ الأوامر والقواعد البرمجية بسرعة ودقة عالية من غير فهم ذاتي ولا وعي بشري.</p>
 
 
 
@@ -379,20 +349,15 @@
 
                 <dl class="lx-terms">
 
-                  <dt class="en">Determinism</dt>
-                  <dd>السلوك الحتمي؛ إمكانية التنبؤ بالنتيجة بناءً على الأوامر والمدخلات وحالة النظام.</dd>
+                  <dt class="en">Determinism</dt><dd>السلوك الحتمي؛ إمكانية التنبؤ بالنتيجة بناءً على الأوامر والمدخلات وحالة النظام.</dd>
 
-                  <dt class="en">Execution Machine</dt>
-                  <dd>وصف تعليمي من NEXUS للكمبيوتر كآلة تنفذ التعليمات بدقة وسرعة دون تفكير مستقل (ليس مصطلحاً صناعياً
-                    قياسياً).</dd>
+                  <dt class="en">Execution Machine</dt><dd>وصف تعليمي من NEXUS للكمبيوتر كآلة تنفذ التعليمات بدقة وسرعة دون تفكير مستقل (ليس مصطلحاً صناعياً قياسياً).</dd>
 
-                  <dt class="en">General Purpose System</dt>
-                  <dd>نظام عام تتغير وظيفته بتغيير البرامج.</dd>
+                  <dt class="en">General Purpose System</dt><dd>نظام عام تتغير وظيفته بتغيير البرامج.</dd>
 
                 </dl>
 
-                <p class="lx-explore"><strong class="en">Turing Completeness:</strong> أي نظام حاسوبي عام يقدر نظرياً
-                  ينفذ أي عملية حسابية طالما عنده ذاكرة ووقت كفاية.</p>
+                <p class="lx-explore"><strong class="en">Turing Completeness:</strong> أي نظام حاسوبي عام يقدر نظرياً ينفذ أي عملية حسابية طالما عنده ذاكرة ووقت كفاية.</p>
 
               </details>
 
@@ -402,8 +367,7 @@
 
                 <p class="lx-transition">طيب، الشاشة اللي قدامك بتخبّي إيه عن اللي بيحصل جوه؟</p>
 
-                <button type="button" class="btn btn-primary" data-next-tab="tab-2">الخطوة التالية <i
-                    class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-primary" data-next-tab="tab-2">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
               </div>
 
@@ -421,8 +385,7 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفرّق بين اللي المستخدم بيشوفه واللي بيحصل جوه الجهاز.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفرّق بين اللي المستخدم بيشوفه واللي بيحصل جوه الجهاز.</span></p>
 
             <h3 class="lx-title">User View vs. Engineer View</h3>
 
@@ -436,11 +399,9 @@
 
               <div class="lx-switch" role="group" aria-label="اختار زاوية النظر">
 
-                <button type="button" class="lx-switch-btn is-active" data-view="user" aria-pressed="true"><i
-                    class="fa-solid fa-user" aria-hidden="true"></i> <span class="en">User View</span></button>
+                <button type="button" class="lx-switch-btn is-active" data-view="user" aria-pressed="true"><i class="fa-solid fa-user" aria-hidden="true"></i> <span class="en">User View</span></button>
 
-                <button type="button" class="lx-switch-btn" data-view="engineer" aria-pressed="false"><i
-                    class="fa-solid fa-gears" aria-hidden="true"></i> <span class="en">Engineer View</span></button>
+                <button type="button" class="lx-switch-btn" data-view="engineer" aria-pressed="false"><i class="fa-solid fa-gears" aria-hidden="true"></i> <span class="en">Engineer View</span></button>
 
               </div>
 
@@ -468,8 +429,7 @@
 
                   <li><strong>الذاكرة:</strong> البيانات والتعليمات بتتخزّن في الـ <span class="en">RAM</span>.</li>
 
-                  <li><strong>Processing:</strong> الـ <span class="en">CPU</span> بينفّذ تعليمة الجمع، والـ <span
-                      class="en">ALU</span> بتعمل الحساب.</li>
+                  <li><strong>Processing:</strong> الـ <span class="en">CPU</span> بينفّذ تعليمة الجمع، والـ <span class="en">ALU</span> بتعمل الحساب.</li>
 
                   <li><strong>Output:</strong> الناتج 8 بيتبعت للشاشة.</li>
 
@@ -483,8 +443,7 @@
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> الواجهة بتخبّي التفاصيل، والمهندس بيفهم الأوامر والذاكرة
-              وسريان البيانات اللي ورا النتيجة.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> الواجهة بتخبّي التفاصيل، والمهندس بيفهم الأوامر والذاكرة وسريان البيانات اللي ورا النتيجة.</p>
 
             <p class="lx-recap">باختصار: نفس الشاشة ممكن تتشاف كواجهة سهلة، أو كأوامر وبيانات بتتنقل جوه الجهاز.</p>
 
@@ -496,11 +455,9 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">User View</dt>
-                <dd>النظرة السطحية للنتائج والواجهات السهلة.</dd>
+                <dt class="en">User View</dt><dd>النظرة السطحية للنتائج والواجهات السهلة.</dd>
 
-                <dt class="en">Engineer View</dt>
-                <dd>فهم الأوامر والذاكرة وسريان البيانات اللي ورا الواجهة.</dd>
+                <dt class="en">Engineer View</dt><dd>فهم الأوامر والذاكرة وسريان البيانات اللي ورا الواجهة.</dd>
 
               </dl>
 
@@ -512,8 +469,7 @@
 
               <p class="lx-transition">خلّينا نحط الرحلة دي في نموذج بسيط نقدر نستخدمه مع أي عملية.</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-3">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-3">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -529,16 +485,13 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفهم إزاي نموذج الـ <span class="en">IPO</span> بيبسّط تتبّع البيانات جوه أي نظام
-                حاسوبي.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفهم إزاي نموذج الـ <span class="en">IPO</span> بيبسّط تتبّع البيانات جوه أي نظام حاسوبي.</span></p>
 
             <h3 class="lx-title">Input → Processing → Output</h3>
 
             <p class="lx-sub">نموذج الـ <span class="en">IPO</span></p>
 
-            <p class="lx-hook">لما بتفتح تطبيق جهات الاتصال وبتدوّر على صاحبك «أحمد»، إيه الخطوات اللي بتحصل من لحظة ما
-              صباعك يلمس الشاشة لحد ما رقم أحمد يظهر قدامك؟</p>
+            <p class="lx-hook">لما بتفتح تطبيق جهات الاتصال وبتدوّر على صاحبك «أحمد»، إيه الخطوات اللي بتحصل من لحظة ما صباعك يلمس الشاشة لحد ما رقم أحمد يظهر قدامك؟</p>
 
 
 
@@ -548,22 +501,15 @@
 
               <ol class="lx-flow">
 
-                <li><strong class="en">Input</strong> (الإدخال): استقبال البيانات من العالم الخارجي، زي كتابتك حرف «أ»
-                  في مربع البحث أو ضغطة ماوس.</li>
+                <li><strong class="en">Input</strong> (الإدخال): استقبال البيانات من العالم الخارجي، زي كتابتك حرف «أ» في مربع البحث أو ضغطة ماوس.</li>
 
-                <li><strong class="en">Processing</strong> (المعالجة): الـ <span class="en">CPU</span> بياخد الحرف ده
-                  ويقارنه بقايمة الأسماء المحفوظة في الجهاز، بناءً على تعليمات البرنامج.</li>
+                <li><strong class="en">Processing</strong> (المعالجة): الـ <span class="en">CPU</span> بياخد الحرف ده ويقارنه بقايمة الأسماء المحفوظة في الجهاز، بناءً على تعليمات البرنامج.</li>
 
-                <li><strong class="en">Output</strong> (الإخراج): إظهار النتيجة ليك، يعني عرض اسم «أحمد» ورقمه على
-                  الشاشة.</li>
+                <li><strong class="en">Output</strong> (الإخراج): إظهار النتيجة ليك، يعني عرض اسم «أحمد» ورقمه على الشاشة.</li>
 
               </ol>
 
-              <p class="lx-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>
-                <span><strong>تنبيه:</strong> <span class="en">IPO</span> مدخل تعليمي مبسط عشان نفهم الفكرة. في الأنظمة
-                  الحقيقية الكمبيوتر بيعمل عمليات كتير في نفس الوقت، وفيه حلقات تغذية راجعة (<span class="en">Feedback
-                    Loops</span>) بتخلي النتيجة ترجع تاني كمدخل لعملية تانية.</span>
-              </p>
+              <p class="lx-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <span><strong>تنبيه:</strong> <span class="en">IPO</span> مدخل تعليمي مبسط عشان نفهم الفكرة. في الأنظمة الحقيقية الكمبيوتر بيعمل عمليات كتير في نفس الوقت، وفيه حلقات تغذية راجعة (<span class="en">Feedback Loops</span>) بتخلي النتيجة ترجع تاني كمدخل لعملية تانية.</span></p>
 
             </div>
 
@@ -571,21 +517,17 @@
 
             <div class="lx-card lx-analogy">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-blender" aria-hidden="true"></i> تشبيه: آلة العصير في
-                الكافيه</h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-blender" aria-hidden="true"></i> تشبيه: آلة العصير في الكافيه</h4>
 
-              <p>بتحط البرتقال (<span class="en">Input</span>)، الماكينة بتعصره وتصفّيه (<span
-                  class="en">Processing</span>)، ويتنزل العصير في الكوباية (<span class="en">Output</span>).</p>
+              <p>بتحط البرتقال (<span class="en">Input</span>)، الماكينة بتعصره وتصفّيه (<span class="en">Processing</span>)، ويتنزل العصير في الكوباية (<span class="en">Output</span>).</p>
 
-              <p class="lx-limit"><strong>حدود التشبيه:</strong> آلة العصير بتعمل وظيفة ميكانيكية واحدة ثابتة. معالجة
-                الكمبيوتر رقمية ومرنة، وبتتغير بالكامل حسب البرنامج.</p>
+              <p class="lx-limit"><strong>حدود التشبيه:</strong> آلة العصير بتعمل وظيفة ميكانيكية واحدة ثابتة. معالجة الكمبيوتر رقمية ومرنة، وبتتغير بالكامل حسب البرنامج.</p>
 
             </div>
 
 
 
-            <div class="lx-card lx-flowviz" role="img"
-              aria-label="رسم يوضح انتقال البيانات من Input إلى Processing ثم Output">
+            <div class="lx-card lx-flowviz" role="img" aria-label="رسم يوضح انتقال البيانات من Input إلى Processing ثم Output">
 
               <div class="lx-flowviz-row">
 
@@ -593,8 +535,7 @@
 
                 <span class="lx-arrow lx-a1" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
 
-                <div class="lx-node lx-n2"><strong class="en">Processing</strong><span>مقارنة بقايمة الأسماء</span>
-                </div>
+                <div class="lx-node lx-n2"><strong class="en">Processing</strong><span>مقارنة بقايمة الأسماء</span></div>
 
                 <span class="lx-arrow lx-a2" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
 
@@ -610,22 +551,21 @@
 
               <h4 class="lx-task-title"><i class="fa-solid fa-flask" aria-hidden="true"></i> صنّف بنفسك</h4>
 
-              <p class="lx-q" id="ipo-q">كل عنصر من دول بيتبع أنهي مرحلة: <span class="en">Input</span> ولا <span
-                  class="en">Processing</span> ولا <span class="en">Output</span>؟</p>
+              <p class="lx-q" id="ipo-q">كل عنصر من دول بيتبع أنهي مرحلة: <span class="en">Input</span> ولا <span class="en">Processing</span> ولا <span class="en">Output</span>؟</p>
 
-              <div class="lx-classify" id="ipo-classify" data-ok="ممتاز! كل أداة بتأدي دورها في السلسلة."
-                data-bad="خلّينا نراجع الأدوار: اللي بيجمع البيانات هو Input، واللي بيعمل الحسابات والمقارنات هو Processing، واللي بيعرض النتيجة هو Output.">
+              <div class="lx-classify" id="ipo-classify"
 
-                <div class="lx-sort-item" data-answer="input"
-                  data-hint="الميكروفون بيلتقط الصوت من برّه الجهاز، يعني بيدخّل بيانات (Input).">
+                   data-ok="ممتاز! كل أداة بتأدي دورها في السلسلة."
+
+                   data-bad="خلّينا نراجع الأدوار: اللي بيجمع البيانات هو Input، واللي بيعمل الحسابات والمقارنات هو Processing، واللي بيعرض النتيجة هو Output.">
+
+                <div class="lx-sort-item" data-answer="input" data-hint="الميكروفون بيلتقط الصوت من برّه الجهاز، يعني بيدخّل بيانات (Input).">
 
                   <span class="lx-sort-label">التقاط صوتك عبر الميكروفون</span>
 
                   <span class="lx-sort-btns" role="group" aria-label="التقاط صوتك عبر الميكروفون">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -633,16 +573,13 @@
 
                 </div>
 
-                <div class="lx-sort-item" data-answer="processing"
-                  data-hint="ضرب رقمين ده حساب بيتعمل جوه المعالج (Processing).">
+                <div class="lx-sort-item" data-answer="processing" data-hint="ضرب رقمين ده حساب بيتعمل جوه المعالج (Processing).">
 
                   <span class="lx-sort-label">حساب ناتج ضرب رقمين</span>
 
                   <span class="lx-sort-btns" role="group" aria-label="حساب ناتج ضرب رقمين">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -656,9 +593,7 @@
 
                   <span class="lx-sort-btns" role="group" aria-label="عرض الصورة على الشاشة">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -666,16 +601,13 @@
 
                 </div>
 
-                <div class="lx-sort-item" data-answer="input"
-                  data-hint="هنا بنتكلم عن اللمسة نفسها وهي بتدخّل أمر للجهاز (Input).">
+                <div class="lx-sort-item" data-answer="input" data-hint="هنا بنتكلم عن اللمسة نفسها وهي بتدخّل أمر للجهاز (Input).">
 
                   <span class="lx-sort-label">لمسة صباعك على الشاشة (كإدخال)</span>
 
                   <span class="lx-sort-btns" role="group" aria-label="لمسة صباعك على الشاشة (كإدخال)">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -683,16 +615,13 @@
 
                 </div>
 
-                <div class="lx-sort-item" data-answer="processing"
-                  data-hint="مقارنة بتتم جوه المعالج بتعليمات البرنامج (Processing).">
+                <div class="lx-sort-item" data-answer="processing" data-hint="مقارنة بتتم جوه المعالج بتعليمات البرنامج (Processing).">
 
                   <span class="lx-sort-label">مقارنة اسم مكتوب بقايمة الأسماء المحفوظة</span>
 
                   <span class="lx-sort-btns" role="group" aria-label="مقارنة اسم مكتوب بقايمة الأسماء المحفوظة">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -706,9 +635,7 @@
 
                   <span class="lx-sort-btns" role="group" aria-label="تشغيل صوت من السماعة">
 
-                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button"
-                      class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip"
-                      data-choice="output">Output</button>
+                    <button type="button" class="lx-chip" data-choice="input">Input</button><button type="button" class="lx-chip" data-choice="processing">Processing</button><button type="button" class="lx-chip" data-choice="output">Output</button>
 
                   </span>
 
@@ -724,11 +651,9 @@
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> الأجهزة بتستقبل البيانات، والمعالج بيعالجها بالبرامج،
-              وبعدين بتتعرض النتيجة.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> الأجهزة بتستقبل البيانات، والمعالج بيعالجها بالبرامج، وبعدين بتتعرض النتيجة.</p>
 
-            <p class="lx-recap">باختصار: نموذج <span class="en">IPO</span> بيشرح إزاي الأنظمة بتستقبل البيانات،
-              وبتعالجها بقواعد البرنامج، وبتطلّع النتائج.</p>
+            <p class="lx-recap">باختصار: نموذج <span class="en">IPO</span> بيشرح إزاي الأنظمة بتستقبل البيانات، وبتعالجها بقواعد البرنامج، وبتطلّع النتائج.</p>
 
 
 
@@ -738,19 +663,15 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">Input Device</dt>
-                <dd>أجهزة التقاط البيانات من المستخدم أو البيئة (Keyboard, Touchscreen, Microphone).</dd>
+                <dt class="en">Input Device</dt><dd>أجهزة التقاط البيانات من المستخدم أو البيئة (Keyboard, Touchscreen, Microphone).</dd>
 
-                <dt class="en">Processing</dt>
-                <dd>معالجة البيانات وتعديلها أو حسابها بناءً على تعليمات البرنامج.</dd>
+                <dt class="en">Processing</dt><dd>معالجة البيانات وتعديلها أو حسابها بناءً على تعليمات البرنامج.</dd>
 
-                <dt class="en">Output Device</dt>
-                <dd>أجهزة عرض النتائج للمستخدم (Monitor, Speaker).</dd>
+                <dt class="en">Output Device</dt><dd>أجهزة عرض النتائج للمستخدم (Monitor, Speaker).</dd>
 
               </dl>
 
-              <p class="lx-explore"><strong class="en">Feedback Loops &amp; Parallel Pipelines:</strong> إزاي العمليات
-                المعقدة في الأنظمة الحديثة بتتفاعل وبتشتغل مع بعض من غير انتظار.</p>
+              <p class="lx-explore"><strong class="en">Feedback Loops &amp; Parallel Pipelines:</strong> إزاي العمليات المعقدة في الأنظمة الحديثة بتتفاعل وبتشتغل مع بعض من غير انتظار.</p>
 
             </details>
 
@@ -760,8 +681,7 @@
 
               <p class="lx-transition">مين اللي بيشغّل الخطوات دي؟ هنبص على الأجهزة والبرامج ونظام التشغيل.</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-4">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-4">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -777,23 +697,19 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفهم إزاي الـ <span class="en">Hardware</span> والتطبيقات ونظام التشغيل بيتعاونوا
-                عشان البرامج تشتغل بأمان.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفهم إزاي الـ <span class="en">Hardware</span> والتطبيقات ونظام التشغيل بيتعاونوا عشان البرامج تشتغل بأمان.</span></p>
 
             <h3 class="lx-title">Hardware, Software &amp; Operating System</h3>
 
             <p class="lx-sub">مين بيكلّم مين؟</p>
 
-            <p class="lx-hook">ليه لما بتنزّل لعبة جديدة على موبايلك، اللعبة مش محتاجة كود مخصوص عشان تشغّل السماعة
-              والشاشة بتوع موبايلك بالذات؟</p>
+            <p class="lx-hook">ليه لما بتنزّل لعبة جديدة على موبايلك، اللعبة مش محتاجة كود مخصوص عشان تشغّل السماعة والشاشة بتوع موبايلك بالذات؟</p>
 
 
 
             <div class="lx-card" data-select-group>
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> الصورة الكبيرة قبل
-                التفاصيل</h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> الصورة الكبيرة قبل التفاصيل</h4>
 
               <p class="lx-diagram-hint">اضغط على أي طبقة عشان تشوف دورها.</p>
 
@@ -801,34 +717,23 @@
 
                 <div class="lx-user" aria-hidden="true"><i class="fa-solid fa-user"></i> إنت (المستخدم)</div>
 
-                <button type="button" class="lx-layer lx-l-app" data-target="lay-app" aria-pressed="false"><span
-                    class="en">Application Software</span><small>المتصفح، الألعاب، المحرر…</small></button>
+                <button type="button" class="lx-layer lx-l-app" data-target="lay-app" aria-pressed="false"><span class="en">Application Software</span><small>المتصفح، الألعاب، المحرر…</small></button>
 
-                <div class="lx-conn"><i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i><span
-                    class="en">System Call</span></div>
+                <div class="lx-conn"><i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i><span class="en">System Call</span></div>
 
-                <button type="button" class="lx-layer lx-l-os" data-target="lay-os" aria-pressed="false"><span
-                    class="en">Operating System (OS)</span><small>Windows، Android، macOS، Linux</small></button>
+                <button type="button" class="lx-layer lx-l-os" data-target="lay-os" aria-pressed="false"><span class="en">Operating System (OS)</span><small>Windows، Android، macOS، Linux</small></button>
 
-                <div class="lx-conn"><i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i><span
-                    class="en">Drivers</span></div>
+                <div class="lx-conn"><i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i><span class="en">Drivers</span></div>
 
-                <button type="button" class="lx-layer lx-l-hw" data-target="lay-hw" aria-pressed="false"><span
-                    class="en">Hardware</span><small><span class="en">CPU · RAM · Storage ·
-                      Input/Output</span></small></button>
+                <button type="button" class="lx-layer lx-l-hw" data-target="lay-hw" aria-pressed="false"><span class="en">Hardware</span><small><span class="en">CPU · RAM · Storage · Input/Output</span></small></button>
 
               </div>
 
-              <div class="lx-info" id="lay-app" hidden><strong>التطبيقات (<span class="en">Application
-                    Software</span>):</strong> البرامج اللي بتستخدمها كل يوم. التطبيق عادةً مبيلمسش الهاردوير مباشرة،
-                بيطلب من نظام التشغيل.</div>
+              <div class="lx-info" id="lay-app" hidden><strong>التطبيقات (<span class="en">Application Software</span>):</strong> البرامج اللي بتستخدمها كل يوم. التطبيق عادةً مبيلمسش الهاردوير مباشرة، بيطلب من نظام التشغيل.</div>
 
-              <div class="lx-info" id="lay-os" hidden><strong>نظام التشغيل (<span class="en">OS</span>):</strong> المدير
-                المسؤول عن الجهاز. بيوزّع وقت المعالج ومساحات الذاكرة بين البرامج، وبيتأكد إن الطلب آمن قبل ما ينفّذه.
-              </div>
+              <div class="lx-info" id="lay-os" hidden><strong>نظام التشغيل (<span class="en">OS</span>):</strong> المدير المسؤول عن الجهاز. بيوزّع وقت المعالج ومساحات الذاكرة بين البرامج، وبيتأكد إن الطلب آمن قبل ما ينفّذه.</div>
 
-              <div class="lx-info" id="lay-hw" hidden><strong>العتاد المادي (<span class="en">Hardware</span>):</strong>
-                المكونات الملموسة زي المعالج والذاكرة والتخزين والشاشة.</div>
+              <div class="lx-info" id="lay-hw" hidden><strong>العتاد المادي (<span class="en">Hardware</span>):</strong> المكونات الملموسة زي المعالج والذاكرة والتخزين والشاشة.</div>
 
             </div>
 
@@ -836,17 +741,13 @@
 
             <div class="lx-text">
 
-              <p>النظام الحاسوبي مقسوم لطبقات (<span class="en">Abstraction Layers</span>) عشان الشغل يبقى أسهل وأأمن.
-              </p>
+              <p>النظام الحاسوبي مقسوم لطبقات (<span class="en">Abstraction Layers</span>) عشان الشغل يبقى أسهل وأأمن.</p>
 
-              <p>لما التطبيق يحتاج يفتح ملف أو يعرض صورة، بيطلب من نظام التشغيل بإجراء رسمي اسمه <strong
-                  class="en">System Call</strong>، ونظام التشغيل بيتأكد إن الطلب آمن وبعدين بينفذه.</p>
+              <p>لما التطبيق يحتاج يفتح ملف أو يعرض صورة، بيطلب من نظام التشغيل بإجراء رسمي اسمه <strong class="en">System Call</strong>، ونظام التشغيل بيتأكد إن الطلب آمن وبعدين بينفذه.</p>
 
-              <p>وعشان نظام التشغيل يتعامل مع أي قطعة هاردوير (سماعة، شاشة، طابعة)، بيستخدم برنامج صغير اسمه <strong
-                  class="en">Driver</strong> (تعريف) بيشتغل كمترجم بين نظام التشغيل والقطعة دي.</p>
+              <p>وعشان نظام التشغيل يتعامل مع أي قطعة هاردوير (سماعة، شاشة، طابعة)، بيستخدم برنامج صغير اسمه <strong class="en">Driver</strong> (تعريف) بيشتغل كمترجم بين نظام التشغيل والقطعة دي.</p>
 
-              <p><strong>الإجابة على سؤالنا:</strong> اللعبة مش محتاجة تعرف تفاصيل موبايلك، لأن نظام التشغيل والـ <span
-                  class="en">Drivers</span> هم اللي بيتصرفوا.</p>
+              <p><strong>الإجابة على سؤالنا:</strong> اللعبة مش محتاجة تعرف تفاصيل موبايلك، لأن نظام التشغيل والـ <span class="en">Drivers</span> هم اللي بيتصرفوا.</p>
 
             </div>
 
@@ -856,12 +757,9 @@
 
               <h4 class="lx-task-title"><i class="fa-solid fa-utensils" aria-hidden="true"></i> تشبيه: المطعم</h4>
 
-              <p>الزبون هو التطبيق، الجرسون هو الـ <span class="en">System Call</span> ونظام التشغيل، والمطبخ هو الـ
-                <span class="en">Hardware</span>. الزبون مبيدخلش المطبخ بنفسه، بيطلب من الجرسون اللي بينظّم الأوردرات.
-              </p>
+              <p>الزبون هو التطبيق، الجرسون هو الـ <span class="en">System Call</span> ونظام التشغيل، والمطبخ هو الـ <span class="en">Hardware</span>. الزبون مبيدخلش المطبخ بنفسه، بيطلب من الجرسون اللي بينظّم الأوردرات.</p>
 
-              <p class="lx-limit"><strong>حدود التشبيه:</strong> نظام التشغيل بيرد على الطلبات في أجزاء صغيرة جداً من
-                الثانية، وبيتحقق من الصلاحيات في كل طلب، وده أسرع وأدق بكتير من الجرسون.</p>
+              <p class="lx-limit"><strong>حدود التشبيه:</strong> نظام التشغيل بيرد على الطلبات في أجزاء صغيرة جداً من الثانية، وبيتحقق من الصلاحيات في كل طلب، وده أسرع وأدق بكتير من الجرسون.</p>
 
             </div>
 
@@ -874,20 +772,18 @@
               <p class="lx-q" id="os-q">ليه نظام التشغيل بيمنع التطبيقات تلمس الذاكرة والهاردوير مباشرةً؟</p>
 
               <div class="lx-check" id="os-check" data-correct="a" data-shuffle="true"
-                data-ok="أحسنت! نظام التشغيل بيضمن الأمان وبيخلّي كل البرامج تشتغل مع بعض من غير ما تتداخل."
-                data-bad="خلّينا نراجعها: السبب الأساسي هو الحماية. نظام التشغيل بيوفّر بيئة آمنة بتمنع البرامج من التداخل أو الوصول المباشر غير المصرّح بيه للهاردوير.">
+
+                   data-ok="أحسنت! نظام التشغيل بيضمن الأمان وبيخلّي كل البرامج تشتغل مع بعض من غير ما تتداخل."
+
+                   data-bad="خلّينا نراجعها: السبب الأساسي هو الحماية. نظام التشغيل بيوفّر بيئة آمنة بتمنع البرامج من التداخل أو الوصول المباشر غير المصرّح بيه للهاردوير.">
 
                 <div class="lx-options" role="radiogroup" aria-labelledby="os-q">
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span
-                      class="lx-key"></span><span>لأن نظام التشغيل بيشتغل كطبقة حماية، بينظّم الموارد وبيمنع أي تطبيق
-                      يبوّظ محتويات الجهاز أو يتداخل مع باقي البرامج.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span class="lx-key"></span><span>لأن نظام التشغيل بيشتغل كطبقة حماية، بينظّم الموارد وبيمنع أي تطبيق يبوّظ محتويات الجهاز أو يتداخل مع باقي البرامج.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span
-                      class="lx-key"></span><span>لأن التطبيقات بطيئة ومبتعرفش تتعامل مع الهاردوير.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span class="lx-key"></span><span>لأن التطبيقات بطيئة ومبتعرفش تتعامل مع الهاردوير.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span
-                      class="lx-key"></span><span>عشان نوفّر في استهلاك البطارية بس.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span class="lx-key"></span><span>عشان نوفّر في استهلاك البطارية بس.</span></button>
 
                 </div>
 
@@ -899,11 +795,9 @@
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> نظام التشغيل بيحمي المكونات المادية وبينظّم طلبات كل
-              البرامج.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> نظام التشغيل بيحمي المكونات المادية وبينظّم طلبات كل البرامج.</p>
 
-            <p class="lx-recap">باختصار: التطبيقات بتتواصل مع الهاردوير بأمان عن طريق نظام التشغيل، وطبقات التجريد
-              (<span class="en">Abstraction</span>) بتخبّي التفاصيل المعقدة.</p>
+            <p class="lx-recap">باختصار: التطبيقات بتتواصل مع الهاردوير بأمان عن طريق نظام التشغيل، وطبقات التجريد (<span class="en">Abstraction</span>) بتخبّي التفاصيل المعقدة.</p>
 
 
 
@@ -913,26 +807,19 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">Hardware &amp; Software</dt>
-                <dd>المكونات المادية الملموسة مقابل البرامج والتعليمات.</dd>
+                <dt class="en">Hardware &amp; Software</dt><dd>المكونات المادية الملموسة مقابل البرامج والتعليمات.</dd>
 
-                <dt class="en">Operating System (OS)</dt>
-                <dd>النظام الأساسي الذي يدير الموارد ويوفر الأمان والوصول للهاردوير.</dd>
+                <dt class="en">Operating System (OS)</dt><dd>النظام الأساسي الذي يدير الموارد ويوفر الأمان والوصول للهاردوير.</dd>
 
-                <dt class="en">System Call</dt>
-                <dd>الطلب الموجه من التطبيق لنظام التشغيل للوصول لخدمات الهاردوير.</dd>
+                <dt class="en">System Call</dt><dd>الطلب الموجه من التطبيق لنظام التشغيل للوصول لخدمات الهاردوير.</dd>
 
-                <dt class="en">Driver</dt>
-                <dd>برنامج صغير يترجم بين نظام التشغيل وقطعة هاردوير محددة.</dd>
+                <dt class="en">Driver</dt><dd>برنامج صغير يترجم بين نظام التشغيل وقطعة هاردوير محددة.</dd>
 
-                <dt class="en">Abstraction</dt>
-                <dd>التجريد؛ إخفاء التفاصيل الهندسية المعقدة خلف أسطح سهلة الاستخدام.</dd>
+                <dt class="en">Abstraction</dt><dd>التجريد؛ إخفاء التفاصيل الهندسية المعقدة خلف أسطح سهلة الاستخدام.</dd>
 
               </dl>
 
-              <p class="lx-explore"><strong class="en">Kernel Mode vs. User Mode:</strong> إزاي نواة النظام (<span
-                  class="en">Kernel</span>) بتشتغل بصلاحيات خاصة للتحكم المباشر بالدوائر، وبتشتغل معاها الـ <span
-                  class="en">Drivers</span>.</p>
+              <p class="lx-explore"><strong class="en">Kernel Mode vs. User Mode:</strong> إزاي نواة النظام (<span class="en">Kernel</span>) بتشتغل بصلاحيات خاصة للتحكم المباشر بالدوائر، وبتشتغل معاها الـ <span class="en">Drivers</span>.</p>
 
             </details>
 
@@ -942,8 +829,7 @@
 
               <p class="lx-transition">والبرامج دي بتشتغل فين؟ في الذاكرة. نشوف إزاي بتترتّب.</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-5">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-5">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -959,23 +845,19 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفرّق بين مستويات الذاكرة وتفهم المقايضة بين السرعة والسعة والاستمرارية.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفرّق بين مستويات الذاكرة وتفهم المقايضة بين السرعة والسعة والاستمرارية.</span></p>
 
             <h3 class="lx-title">Memory Hierarchy</h3>
 
             <p class="lx-sub">ليه فيه أكتر من نوع ذاكرة؟</p>
 
-            <p class="lx-hook">لما بتذاكر، ليه بتحط الكتاب اللي بتذاكر منه دلوقتي قدامك على المكتب، وباقي الكتب التقيلة
-              بتسيبها في الدولاب أو المكتبة؟</p>
+            <p class="lx-hook">لما بتذاكر، ليه بتحط الكتاب اللي بتذاكر منه دلوقتي قدامك على المكتب، وباقي الكتب التقيلة بتسيبها في الدولاب أو المكتبة؟</p>
 
 
 
             <div class="lx-text">
 
-              <p>في تصميم الكمبيوتر فيه قاعدة هندسية مهمة: الذاكرة السريعة جداً بتبقى غالية وحجمها صغير، والذاكرة
-                الكبيرة بتبقى أبطأ وأرخص. وعشان كده اتعملت <strong class="en">Memory Hierarchy</strong> (هرمية الذاكرة).
-              </p>
+              <p>في تصميم الكمبيوتر فيه قاعدة هندسية مهمة: الذاكرة السريعة جداً بتبقى غالية وحجمها صغير، والذاكرة الكبيرة بتبقى أبطأ وأرخص. وعشان كده اتعملت <strong class="en">Memory Hierarchy</strong> (هرمية الذاكرة).</p>
 
             </div>
 
@@ -991,78 +873,41 @@
 
                 <span class="lx-axis lx-axis-top">أسرع · أصغر · أغلى (في الجيجا)</span>
 
-                <button type="button" class="lx-level lx-lv1" data-target="mem-reg" aria-pressed="false"><span
-                    class="en">Registers</span></button>
+                <button type="button" class="lx-level lx-lv1" data-target="mem-reg" aria-pressed="false"><span class="en">Registers</span></button>
 
-                <button type="button" class="lx-level lx-lv2" data-target="mem-cache" aria-pressed="false"><span
-                    class="en">Cache</span></button>
+                <button type="button" class="lx-level lx-lv2" data-target="mem-cache" aria-pressed="false"><span class="en">Cache</span></button>
 
-                <button type="button" class="lx-level lx-lv3" data-target="mem-ram" aria-pressed="false"><span
-                    class="en">RAM</span></button>
+                <button type="button" class="lx-level lx-lv3" data-target="mem-ram" aria-pressed="false"><span class="en">RAM</span></button>
 
-                <button type="button" class="lx-level lx-lv4" data-target="mem-ssd" aria-pressed="false"><span
-                    class="en">Secondary Storage (SSD / HDD)</span></button>
+                <button type="button" class="lx-level lx-lv4" data-target="mem-ssd" aria-pressed="false"><span class="en">Secondary Storage (SSD / HDD)</span></button>
 
                 <span class="lx-axis lx-axis-bottom">أبطأ · أكبر · أرخص (في الجيجا)</span>
 
               </div>
 
-              <div class="lx-info" id="mem-reg" hidden><strong class="en">Registers:</strong> أسرع أماكن تخزين، موجودة
-                جوه المعالج نفسه. بتشيل البيانات اللي المعالج شغال عليها في نفس اللحظة. <span
-                  class="lx-tag lx-tag-vol">Volatile</span></div>
+              <div class="lx-info" id="mem-reg" hidden><strong class="en">Registers:</strong> أسرع أماكن تخزين، موجودة جوه المعالج نفسه. بتشيل البيانات اللي المعالج شغال عليها في نفس اللحظة. <span class="lx-tag lx-tag-vol">Volatile</span></div>
 
-              <div class="lx-info" id="mem-cache" hidden><strong class="en">Cache:</strong> ذاكرة سريعة جداً قريبة من
-                المعالج، بتخزّن البيانات اللي بتتكرر. <span class="lx-tag lx-tag-vol">Volatile</span></div>
+              <div class="lx-info" id="mem-cache" hidden><strong class="en">Cache:</strong> ذاكرة سريعة جداً قريبة من المعالج، بتخزّن البيانات اللي بتتكرر. <span class="lx-tag lx-tag-vol">Volatile</span></div>
 
-              <div class="lx-info" id="mem-ram" hidden><strong class="en">RAM</strong> (الذاكرة الرئيسية): مساحة العمل
-                النشطة (<span class="en">Active Workspace</span>)، زي سطح المكتب. أول ما الكهربا تفصل كل البيانات اللي
-                عليها بتروح. <span class="lx-tag lx-tag-vol">Volatile</span></div>
+              <div class="lx-info" id="mem-ram" hidden><strong class="en">RAM</strong> (الذاكرة الرئيسية): مساحة العمل النشطة (<span class="en">Active Workspace</span>)، زي سطح المكتب. أول ما الكهربا تفصل كل البيانات اللي عليها بتروح. <span class="lx-tag lx-tag-vol">Volatile</span></div>
 
-              <div class="lx-info" id="mem-ssd" hidden><strong class="en">Secondary Storage (SSD / HDD):</strong> بتحفظ
-                الملفات والصور حتى بعد ما الجهاز يتقفل. <span class="lx-tag lx-tag-nv">Non-Volatile</span></div>
+              <div class="lx-info" id="mem-ssd" hidden><strong class="en">Secondary Storage (SSD / HDD):</strong> بتحفظ الملفات والصور حتى بعد ما الجهاز يتقفل. <span class="lx-tag lx-tag-nv">Non-Volatile</span></div>
 
               <table class="lx-meters">
 
                 <caption>مقارنة نسبية بين المستويات (مش أرقام دقيقة)</caption>
 
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">السرعة</th>
-                    <th scope="col">السعة</th>
-                    <th scope="col">التكلفة للجيجا</th>
-                  </tr>
-                </thead>
+                <thead><tr><th scope="col"></th><th scope="col">السرعة</th><th scope="col">السعة</th><th scope="col">التكلفة للجيجا</th></tr></thead>
 
                 <tbody>
 
-                  <tr>
-                    <th scope="row" class="en">Registers</th>
-                    <td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td>
-                  </tr>
+                  <tr><th scope="row" class="en">Registers</th><td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td><td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td><td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td></tr>
 
-                  <tr>
-                    <th scope="row" class="en">Cache</th>
-                    <td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td>
-                  </tr>
+                  <tr><th scope="row" class="en">Cache</th><td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td><td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td><td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td></tr>
 
-                  <tr>
-                    <th scope="row" class="en">RAM</th>
-                    <td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td>
-                  </tr>
+                  <tr><th scope="row" class="en">RAM</th><td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td><td><span class="lx-meter" data-level="3" role="img" aria-label="3 من 4"></span></td><td><span class="lx-meter" data-level="2" role="img" aria-label="2 من 4"></span></td></tr>
 
-                  <tr>
-                    <th scope="row" class="en">SSD / HDD</th>
-                    <td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td>
-                    <td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td>
-                  </tr>
+                  <tr><th scope="row" class="en">SSD / HDD</th><td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td><td><span class="lx-meter" data-level="4" role="img" aria-label="4 من 4"></span></td><td><span class="lx-meter" data-level="1" role="img" aria-label="1 من 4"></span></td></tr>
 
                 </tbody>
 
@@ -1074,8 +919,7 @@
 
             <div class="lx-card lx-analogy">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-book-open" aria-hidden="true"></i> تشبيه: مكتب المذاكرة
-              </h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-book-open" aria-hidden="true"></i> تشبيه: مكتب المذاكرة</h4>
 
               <ul class="lx-list">
 
@@ -1089,11 +933,7 @@
 
               </ul>
 
-              <p class="lx-limit"><strong>حدود التشبيه:</strong> انتقال البيانات بين الـ <span class="en">SSD</span>
-                والـ <span class="en">RAM</span> بيتم عبر <span class="en">Buses</span> وكنترولر بسرعة عالية جداً. والـ
-                <span class="en">SSD</span> مفيهوش أجزاء متحركة، لكن الـ <span class="en">HDD</span> فيه قرص بيلف ورأس
-                قراءة بتتحرك، وعشان كده هو أبطأ.
-              </p>
+              <p class="lx-limit"><strong>حدود التشبيه:</strong> انتقال البيانات بين الـ <span class="en">SSD</span> والـ <span class="en">RAM</span> بيتم عبر <span class="en">Buses</span> وكنترولر بسرعة عالية جداً. والـ <span class="en">SSD</span> مفيهوش أجزاء متحركة، لكن الـ <span class="en">HDD</span> فيه قرص بيلف ورأس قراءة بتتحرك، وعشان كده هو أبطأ.</p>
 
             </div>
 
@@ -1103,27 +943,21 @@
 
               <h4 class="lx-task-title"><i class="fa-solid fa-flask" aria-hidden="true"></i> تجربة: الكهربا قطعت</h4>
 
-              <p class="lx-q" id="ram-q">كنت بتكتب مقال في محرر نصوص من غير حفظ تلقائي، والكهربا قطعت فجأة قبل ما تدوس
-                <span class="en">Save</span>. إيه اللي هيحصل للمقال غير المحفوظ؟
-              </p>
+              <p class="lx-q" id="ram-q">كنت بتكتب مقال في محرر نصوص من غير حفظ تلقائي، والكهربا قطعت فجأة قبل ما تدوس <span class="en">Save</span>. إيه اللي هيحصل للمقال غير المحفوظ؟</p>
 
               <div class="lx-check" id="ram-check" data-correct="b" data-shuffle="true"
-                data-ok="ممتاز! الـ RAM بتفقد كل محتوياتها لما الكهربا تفصل، طالما البيانات ما اتنقلتش للتخزين الدائم (SSD)."
-                data-bad="خلّينا نراجع مفهوم Volatility: الـ RAM والـ Cache مساحات مؤقتة متطايرة، والتخزين الدائم محتاج عملية حفظ (Save) على الـ SSD.">
+
+                   data-ok="ممتاز! الـ RAM بتفقد كل محتوياتها لما الكهربا تفصل، طالما البيانات ما اتنقلتش للتخزين الدائم (SSD)."
+
+                   data-bad="خلّينا نراجع مفهوم Volatility: الـ RAM والـ Cache مساحات مؤقتة متطايرة، والتخزين الدائم محتاج عملية حفظ (Save) على الـ SSD.">
 
                 <div class="lx-options" role="radiogroup" aria-labelledby="ram-q">
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span
-                      class="lx-key"></span><span>المقال هيفضل موجود لأن الـ SSD بيحفظ كل حاجة بتتكتب
-                      لحظياً.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="a"><span class="lx-key"></span><span>المقال هيفضل موجود لأن الـ SSD بيحفظ كل حاجة بتتكتب لحظياً.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span
-                      class="lx-key"></span><span>المقال هيضيع لأنه كان في الـ RAM (ذاكرة متطايرة) ولسه ما اتنقلش للـ
-                      SSD.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="b"><span class="lx-key"></span><span>المقال هيضيع لأنه كان في الـ RAM (ذاكرة متطايرة) ولسه ما اتنقلش للـ SSD.</span></button>
 
-                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span
-                      class="lx-key"></span><span>المقال هيفضل موجود لأن الـ Cache بتحتفظ بنسخة منه بعد انقطاع
-                      الكهربا.</span></button>
+                  <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="c"><span class="lx-key"></span><span>المقال هيفضل موجود لأن الـ Cache بتحتفظ بنسخة منه بعد انقطاع الكهربا.</span></button>
 
                 </div>
 
@@ -1135,11 +969,9 @@
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> الـ <span class="en">RAM</span> سريعة ومؤقتة ومتطايرة، أما
-              الـ <span class="en">SSD</span> فدائم وبيحفظ الملفات.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> الـ <span class="en">RAM</span> سريعة ومؤقتة ومتطايرة، أما الـ <span class="en">SSD</span> فدائم وبيحفظ الملفات.</p>
 
-            <p class="lx-recap">باختصار: الذاكرة بتتدرج من السجلات السريعة المتطايرة جوه المعالج لوحدات التخزين الدائمة
-              الكبيرة.</p>
+            <p class="lx-recap">باختصار: الذاكرة بتتدرج من السجلات السريعة المتطايرة جوه المعالج لوحدات التخزين الدائمة الكبيرة.</p>
 
 
 
@@ -1149,23 +981,17 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">Volatile Memory</dt>
-                <dd>ذاكرة متطايرة تفقد محتواها بانقطاع التيار (RAM, Cache, Registers).</dd>
+                <dt class="en">Volatile Memory</dt><dd>ذاكرة متطايرة تفقد محتواها بانقطاع التيار (RAM, Cache, Registers).</dd>
 
-                <dt class="en">Non-Volatile Memory</dt>
-                <dd>ذاكرة غير متطايرة (دائمة) تحتفظ بالبيانات بدون كهرباء (SSD, HDD).</dd>
+                <dt class="en">Non-Volatile Memory</dt><dd>ذاكرة غير متطايرة (دائمة) تحتفظ بالبيانات بدون كهرباء (SSD, HDD).</dd>
 
-                <dt class="en">Registers</dt>
-                <dd>وحدات تخزين فائقة السرعة والصغر داخل نواة المعالج مباشرة.</dd>
+                <dt class="en">Registers</dt><dd>وحدات تخزين فائقة السرعة والصغر داخل نواة المعالج مباشرة.</dd>
 
-                <dt class="en">RAM (Random Access Memory)</dt>
-                <dd>الذاكرة الرئيسية المؤقتة التي تشغّل البرامج الحالية.</dd>
+                <dt class="en">RAM (Random Access Memory)</dt><dd>الذاكرة الرئيسية المؤقتة التي تشغّل البرامج الحالية.</dd>
 
               </dl>
 
-              <p class="lx-explore"><strong class="en">Firmware (BIOS/UEFI) &amp; Virtual Memory:</strong> الشريحة
-                الثابتة (<span class="en">Flash ROM</span>) اللي بتبدأ تشغيل الجهاز، وإزاي النظام بيستخدم جزء من التخزين
-                الدائم كذاكرة إضافية.</p>
+              <p class="lx-explore"><strong class="en">Firmware (BIOS/UEFI) &amp; Virtual Memory:</strong> الشريحة الثابتة (<span class="en">Flash ROM</span>) اللي بتبدأ تشغيل الجهاز، وإزاي النظام بيستخدم جزء من التخزين الدائم كذاكرة إضافية.</p>
 
             </details>
 
@@ -1175,8 +1001,7 @@
 
               <p class="lx-transition">المعالج بيشتغل على اللي في الذاكرة. إيه اللي جواه، وإزاي بيكلّم الباقي؟</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-6">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-6">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -1192,16 +1017,13 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تحدد الأجزاء الأساسية للـ <span class="en">CPU</span> وتعرف إزاي بيتكلم مع الذاكرة
-                والأجهزة عن طريق الـ <span class="en">Buses</span>.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تحدد الأجزاء الأساسية للـ <span class="en">CPU</span> وتعرف إزاي بيتكلم مع الذاكرة والأجهزة عن طريق الـ <span class="en">Buses</span>.</span></p>
 
             <h3 class="lx-title">CPU Architecture &amp; Buses</h3>
 
             <p class="lx-sub">المعالج من جوه</p>
 
-            <p class="lx-hook">لو الـ <span class="en">RAM</span> هي سطح المكتب، يبقى المعالج هو اللي بيشتغل عليه. هو مش
-              حاجة واحدة، ده فيه 3 أجزاء أساسية.</p>
+            <p class="lx-hook">لو الـ <span class="en">RAM</span> هي سطح المكتب، يبقى المعالج هو اللي بيشتغل عليه. هو مش حاجة واحدة، ده فيه 3 أجزاء أساسية.</p>
 
 
 
@@ -1221,8 +1043,7 @@
 
                     <button type="button" class="lx-part" data-target="cpu-alu" aria-pressed="false">ALU</button>
 
-                    <button type="button" class="lx-part" data-target="cpu-cu" aria-pressed="false">Control
-                      Unit</button>
+                    <button type="button" class="lx-part" data-target="cpu-cu" aria-pressed="false">Control Unit</button>
 
                     <button type="button" class="lx-part" data-target="cpu-reg" aria-pressed="false">Registers</button>
 
@@ -1232,14 +1053,11 @@
 
                 <div class="lx-buses">
 
-                  <button type="button" class="lx-bus" data-target="bus-data" aria-pressed="false"><i
-                      class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Data Bus</button>
+                  <button type="button" class="lx-bus" data-target="bus-data" aria-pressed="false"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Data Bus</button>
 
-                  <button type="button" class="lx-bus" data-target="bus-addr" aria-pressed="false"><i
-                      class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Address Bus</button>
+                  <button type="button" class="lx-bus" data-target="bus-addr" aria-pressed="false"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Address Bus</button>
 
-                  <button type="button" class="lx-bus" data-target="bus-ctrl" aria-pressed="false"><i
-                      class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Control Bus</button>
+                  <button type="button" class="lx-bus" data-target="bus-ctrl" aria-pressed="false"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Control Bus</button>
 
                 </div>
 
@@ -1247,23 +1065,17 @@
 
               </div>
 
-              <div class="lx-info" id="cpu-alu" hidden><strong class="en">ALU:</strong> بتعمل الحسابات والمقارنات (جمع،
-                ضرب، أكبر من، أصغر من).</div>
+              <div class="lx-info" id="cpu-alu" hidden><strong class="en">ALU:</strong> بتعمل الحسابات والمقارنات (جمع، ضرب، أكبر من، أصغر من).</div>
 
-              <div class="lx-info" id="cpu-cu" hidden><strong class="en">Control Unit (CU):</strong> المنسّق. بتقرأ
-                الأمر وتوجّه باقي الأجزاء تعمل إيه.</div>
+              <div class="lx-info" id="cpu-cu" hidden><strong class="en">Control Unit (CU):</strong> المنسّق. بتقرأ الأمر وتوجّه باقي الأجزاء تعمل إيه.</div>
 
-              <div class="lx-info" id="cpu-reg" hidden><strong class="en">Registers:</strong> الذاكرة الصغيرة جداً
-                والسريعة اللي جوه المعالج نفسه.</div>
+              <div class="lx-info" id="cpu-reg" hidden><strong class="en">Registers:</strong> الذاكرة الصغيرة جداً والسريعة اللي جوه المعالج نفسه.</div>
 
-              <div class="lx-info" id="bus-data" hidden><strong class="en">Data Bus:</strong> بتنقل البيانات نفسها.
-              </div>
+              <div class="lx-info" id="bus-data" hidden><strong class="en">Data Bus:</strong> بتنقل البيانات نفسها.</div>
 
-              <div class="lx-info" id="bus-addr" hidden><strong class="en">Address Bus:</strong> بتحدد مكان البيانات
-                (العنوان).</div>
+              <div class="lx-info" id="bus-addr" hidden><strong class="en">Address Bus:</strong> بتحدد مكان البيانات (العنوان).</div>
 
-              <div class="lx-info" id="bus-ctrl" hidden><strong class="en">Control Bus:</strong> بتنقل إشارات التحكم زي
-                «اقرأ» و«اكتب».</div>
+              <div class="lx-info" id="bus-ctrl" hidden><strong class="en">Control Bus:</strong> بتنقل إشارات التحكم زي «اقرأ» و«اكتب».</div>
 
             </div>
 
@@ -1271,26 +1083,17 @@
 
             <div class="lx-text">
 
-              <p>الـ <span class="en">CPU</span> بيتكلم مع الـ <span class="en">RAM</span> وباقي الأجهزة عن طريق <strong
-                  class="en">Buses</strong> (النواقل)، وهي مجموعة أسلاك بتنقل المعلومات. الـ <span
-                  class="en">Buses</span> مسارات بتربط المعالج بالباقي، مش جزء من أجزاء المعالج الثلاثة.</p>
+              <p>الـ <span class="en">CPU</span> بيتكلم مع الـ <span class="en">RAM</span> وباقي الأجهزة عن طريق <strong class="en">Buses</strong> (النواقل)، وهي مجموعة أسلاك بتنقل المعلومات. الـ <span class="en">Buses</span> مسارات بتربط المعالج بالباقي، مش جزء من أجزاء المعالج الثلاثة.</p>
 
-              <p><strong>مثال:</strong> لما المعالج يحتاج قيمة من الـ <span class="en">RAM</span>، بيحدد مكانها على الـ
-                <span class="en">Address Bus</span>، وبيبعت إشارة «اقرأ» على الـ <span class="en">Control Bus</span>،
-                والقيمة بترجعله على الـ <span class="en">Data Bus</span>.
-              </p>
+              <p><strong>مثال:</strong> لما المعالج يحتاج قيمة من الـ <span class="en">RAM</span>، بيحدد مكانها على الـ <span class="en">Address Bus</span>، وبيبعت إشارة «اقرأ» على الـ <span class="en">Control Bus</span>، والقيمة بترجعله على الـ <span class="en">Data Bus</span>.</p>
 
             </div>
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> الـ <span class="en">CPU</span> = <span
-                class="en">ALU</span> + <span class="en">Control Unit</span> + <span class="en">Registers</span>،
-              وبيكلّم الذاكرة والأجهزة عن طريق 3 أنواع <span class="en">Buses</span>.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> الـ <span class="en">CPU</span> = <span class="en">ALU</span> + <span class="en">Control Unit</span> + <span class="en">Registers</span>، وبيكلّم الذاكرة والأجهزة عن طريق 3 أنواع <span class="en">Buses</span>.</p>
 
-            <p class="lx-recap">باختصار: الـ <span class="en">ALU</span> بتحسب، والـ <span class="en">CU</span> بتنسّق،
-              والـ <span class="en">Registers</span> بتشيل اللي شغّال دلوقتي، والـ <span class="en">Buses</span> بتنقل.
-            </p>
+            <p class="lx-recap">باختصار: الـ <span class="en">ALU</span> بتحسب، والـ <span class="en">CU</span> بتنسّق، والـ <span class="en">Registers</span> بتشيل اللي شغّال دلوقتي، والـ <span class="en">Buses</span> بتنقل.</p>
 
 
 
@@ -1300,15 +1103,11 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">CPU (Central Processing Unit)</dt>
-                <dd>المعالج المركزي؛ ينفذ التعليمات ويتكون من ALU و Control Unit و Registers.</dd>
+                <dt class="en">CPU (Central Processing Unit)</dt><dd>المعالج المركزي؛ ينفذ التعليمات ويتكون من ALU و Control Unit و Registers.</dd>
 
-                <dt class="en">ALU / Control Unit (CU)</dt>
-                <dd>وحدة الحساب والمنطق، ووحدة التحكم التي تفك شفرة الأوامر وتوجّه أجزاء المعالج.</dd>
+                <dt class="en">ALU / Control Unit (CU)</dt><dd>وحدة الحساب والمنطق، ووحدة التحكم التي تفك شفرة الأوامر وتوجّه أجزاء المعالج.</dd>
 
-                <dt class="en">Bus</dt>
-                <dd>ناقل؛ مسار يربط المعالج بالذاكرة والأجهزة وينقل البيانات والعناوين وإشارات التحكم (Data / Address /
-                  Control).</dd>
+                <dt class="en">Bus</dt><dd>ناقل؛ مسار يربط المعالج بالذاكرة والأجهزة وينقل البيانات والعناوين وإشارات التحكم (Data / Address / Control).</dd>
 
               </dl>
 
@@ -1320,8 +1119,7 @@
 
               <p class="lx-transition">إزاي الإشارات الكهربائية دي بتتحول لـ 0 و1؟ نبدأ من الترانزستور.</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-7">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-7">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -1337,23 +1135,19 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفهم إزاي المفاتيح الإلكترونية ومستويات الجهد بتتفسّر كأرقام ثنائية وبتتجمّع في
-                بوابات منطقية.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفهم إزاي المفاتيح الإلكترونية ومستويات الجهد بتتفسّر كأرقام ثنائية وبتتجمّع في بوابات منطقية.</span></p>
 
             <h3 class="lx-title">From Transistors to Binary</h3>
 
             <p class="lx-sub">من الجهد الكهربائي لـ 0 و1</p>
 
-            <p class="lx-hook">إزاي الكهربا الماشية في الأسلاك بتتحول لـ 0 و1، والـ 0 و1 دول بيعملوا إيه جوه المعالج؟
-            </p>
+            <p class="lx-hook">إزاي الكهربا الماشية في الأسلاك بتتحول لـ 0 و1، والـ 0 و1 دول بيعملوا إيه جوه المعالج؟</p>
 
 
 
             <div class="lx-text">
 
-              <p>المعالج جواه مليارات القطع الإلكترونية الصغيرة اسمها <strong class="en">Transistors</strong>
-                (ترانزستورات). في الدوائر الرقمية، الترانزستور بيشتغل كـ «مفتاح إلكتروني»:</p>
+              <p>المعالج جواه مليارات القطع الإلكترونية الصغيرة اسمها <strong class="en">Transistors</strong> (ترانزستورات). في الدوائر الرقمية، الترانزستور بيشتغل كـ «مفتاح إلكتروني»:</p>
 
               <div class="badge-row">
 
@@ -1363,14 +1157,9 @@
 
               </div>
 
-              <p>الكمبيوتر بيستخدم <strong class="en">Binary</strong> (النظام الثنائي) لأن التفريق بين حالتين واضحتين
-                (عالي / واطي) أضمن وأسهل في التصميم من محاولة التفريق بين 10 مستويات جهد مختلفة من غير أخطاء.</p>
+              <p>الكمبيوتر بيستخدم <strong class="en">Binary</strong> (النظام الثنائي) لأن التفريق بين حالتين واضحتين (عالي / واطي) أضمن وأسهل في التصميم من محاولة التفريق بين 10 مستويات جهد مختلفة من غير أخطاء.</p>
 
-              <p>ولما نوصّل مجموعة ترانزستورات ببعض، بنبني <strong class="en">Logic Gates</strong> (بوابات منطقية) زي
-                <span class="en">AND</span> و<span class="en">OR</span> و<span class="en">NOT</span>. والبوابات دي هي
-                اللي بتتبني منها الـ <span class="en">ALU</span> (اللي شفناها جوه الـ <span class="en">CPU</span>)، وهي
-                اللي بتعمل العمليات الحسابية والمنطقية.
-              </p>
+              <p>ولما نوصّل مجموعة ترانزستورات ببعض، بنبني <strong class="en">Logic Gates</strong> (بوابات منطقية) زي <span class="en">AND</span> و<span class="en">OR</span> و<span class="en">NOT</span>. والبوابات دي هي اللي بتتبني منها الـ <span class="en">ALU</span> (اللي شفناها جوه الـ <span class="en">CPU</span>)، وهي اللي بتعمل العمليات الحسابية والمنطقية.</p>
 
             </div>
 
@@ -1378,21 +1167,17 @@
 
             <div class="lx-card lx-analogy">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> تشبيه: مفتاحين نور ورا
-                بعض</h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> تشبيه: مفتاحين نور ورا بعض</h4>
 
-              <p>مفتاحين نور متوصلين ورا بعض (على التوالي). النور مش هينوّر غير لو المفتاحين الاتنين شغالين (<span
-                  class="en">ON</span>). ده بالظبط شغل بوابة <span class="en">AND</span>.</p>
+              <p>مفتاحين نور متوصلين ورا بعض (على التوالي). النور مش هينوّر غير لو المفتاحين الاتنين شغالين (<span class="en">ON</span>). ده بالظبط شغل بوابة <span class="en">AND</span>.</p>
 
-              <p class="lx-limit"><strong>حدود التشبيه:</strong> الترانزستور مش مفتاح ميكانيكي بتضغط عليه بصباعك. ده
-                مفتاح إلكتروني بيتحكم فيه الجهد، وبيتقلب بين الحالتين ملايين المرات في الثانية من غير أي حركة.</p>
+              <p class="lx-limit"><strong>حدود التشبيه:</strong> الترانزستور مش مفتاح ميكانيكي بتضغط عليه بصباعك. ده مفتاح إلكتروني بيتحكم فيه الجهد، وبيتقلب بين الحالتين ملايين المرات في الثانية من غير أي حركة.</p>
 
             </div>
 
 
 
-            <div class="lx-card lx-chain" role="img"
-              aria-label="من الترانزستور إلى مستوى الجهد ثم الرقم الثنائي ثم البوابة المنطقية ثم ALU">
+            <div class="lx-card lx-chain" role="img" aria-label="من الترانزستور إلى مستوى الجهد ثم الرقم الثنائي ثم البوابة المنطقية ثم ALU">
 
               <div class="lx-chain-row">
 
@@ -1422,32 +1207,23 @@
 
             <div class="lx-card lx-task">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i> محاكي بوابة <span
-                  class="en">AND</span></h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-toggle-on" aria-hidden="true"></i> محاكي بوابة <span class="en">AND</span></h4>
 
-              <p class="lx-diagram-hint">غيّر حالة <span class="en">A</span> و<span class="en">B</span> وجرّب التركيبات
-                الأربعة.</p>
+              <p class="lx-diagram-hint">غيّر حالة <span class="en">A</span> و<span class="en">B</span> وجرّب التركيبات الأربعة.</p>
 
               <div class="lx-gate" id="gate-sim">
 
                 <div class="lx-gate-inputs">
 
-                  <button type="button" class="lx-toggle" data-input="a" aria-pressed="false"
-                    aria-label="A: القيمة الحالية 0"><span class="lx-toggle-name en">A</span><span
-                      class="lx-toggle-val en">0 · Low</span></button>
+                  <button type="button" class="lx-toggle" data-input="a" aria-pressed="false" aria-label="A: القيمة الحالية 0"><span class="lx-toggle-name en">A</span><span class="lx-toggle-val en">0 · Low</span></button>
 
-                  <button type="button" class="lx-toggle" data-input="b" aria-pressed="false"
-                    aria-label="B: القيمة الحالية 0"><span class="lx-toggle-name en">B</span><span
-                      class="lx-toggle-val en">0 · Low</span></button>
+                  <button type="button" class="lx-toggle" data-input="b" aria-pressed="false" aria-label="B: القيمة الحالية 0"><span class="lx-toggle-name en">B</span><span class="lx-toggle-val en">0 · Low</span></button>
 
                 </div>
 
                 <div class="lx-gate-box en" aria-hidden="true">AND</div>
 
-                <div class="lx-lamp-wrap">
-                  <div class="lx-lamp" id="gate-lamp" aria-hidden="true"></div><span class="lx-lamp-val en"
-                    id="gate-out" role="status" aria-live="polite">Output = 0</span>
-                </div>
+                <div class="lx-lamp-wrap"><div class="lx-lamp" id="gate-lamp" aria-hidden="true"></div><span class="lx-lamp-val en" id="gate-out" role="status" aria-live="polite">Output = 0</span></div>
 
               </div>
 
@@ -1455,39 +1231,17 @@
 
                 <caption class="en">Truth Table (AND)</caption>
 
-                <thead>
-                  <tr>
-                    <th class="en">A</th>
-                    <th class="en">B</th>
-                    <th class="en">Output</th>
-                  </tr>
-                </thead>
+                <thead><tr><th class="en">A</th><th class="en">B</th><th class="en">Output</th></tr></thead>
 
                 <tbody>
 
-                  <tr data-row="00">
-                    <td>0</td>
-                    <td>0</td>
-                    <td class="lx-out">؟</td>
-                  </tr>
+                  <tr data-row="00"><td>0</td><td>0</td><td class="lx-out">؟</td></tr>
 
-                  <tr data-row="01">
-                    <td>0</td>
-                    <td>1</td>
-                    <td class="lx-out">؟</td>
-                  </tr>
+                  <tr data-row="01"><td>0</td><td>1</td><td class="lx-out">؟</td></tr>
 
-                  <tr data-row="10">
-                    <td>1</td>
-                    <td>0</td>
-                    <td class="lx-out">؟</td>
-                  </tr>
+                  <tr data-row="10"><td>1</td><td>0</td><td class="lx-out">؟</td></tr>
 
-                  <tr data-row="11">
-                    <td>1</td>
-                    <td>1</td>
-                    <td class="lx-out">؟</td>
-                  </tr>
+                  <tr data-row="11"><td>1</td><td>1</td><td class="lx-out">؟</td></tr>
 
                 </tbody>
 
@@ -1495,20 +1249,19 @@
 
               <div class="lx-gate-check" id="gate-check-wrap" hidden>
 
-                <p class="lx-q" id="gate-q">سؤال تحقق: لو <span class="en">A = 1</span> و<span class="en">B = 0</span>،
-                  هل اللمبة هتنوّر؟</p>
+                <p class="lx-q" id="gate-q">سؤال تحقق: لو <span class="en">A = 1</span> و<span class="en">B = 0</span>، هل اللمبة هتنوّر؟</p>
 
                 <div class="lx-check" id="gate-check" data-correct="no"
-                  data-ok="أحسنت! بوابة AND بتدّي 1 بس لما A و B الاتنين يبقوا 1."
-                  data-bad="خلّينا نجرّب تاني: بوابة AND بتدّي 1 بس لو A و B الاتنين = 1، وفي أي حالة تانية الناتج 0.">
+
+                     data-ok="أحسنت! بوابة AND بتدّي 1 بس لما A و B الاتنين يبقوا 1."
+
+                     data-bad="خلّينا نجرّب تاني: بوابة AND بتدّي 1 بس لو A و B الاتنين = 1، وفي أي حالة تانية الناتج 0.">
 
                   <div class="lx-options" role="radiogroup" aria-labelledby="gate-q">
 
-                    <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="yes"><span
-                        class="lx-key"></span><span>أيوه، هتنوّر.</span></button>
+                    <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="yes"><span class="lx-key"></span><span>أيوه، هتنوّر.</span></button>
 
-                    <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="no"><span
-                        class="lx-key"></span><span>لأ، مش هتنوّر، لأن المدخلين مش الاتنين 1.</span></button>
+                    <button type="button" class="lx-opt" role="radio" aria-checked="false" data-key="no"><span class="lx-key"></span><span>لأ، مش هتنوّر، لأن المدخلين مش الاتنين 1.</span></button>
 
                   </div>
 
@@ -1522,11 +1275,9 @@
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> البوابات المنطقية بتتبني من الترانزستورات عشان تعالج
-              الإشارات الثنائية.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> البوابات المنطقية بتتبني من الترانزستورات عشان تعالج الإشارات الثنائية.</p>
 
-            <p class="lx-recap">باختصار: الدوائر بتترجم مستويات الجهد لقيم ثنائية (0 و1)، ومنها بتتبني البوابات المنطقية
-              ووحدة الـ <span class="en">ALU</span>.</p>
+            <p class="lx-recap">باختصار: الدوائر بتترجم مستويات الجهد لقيم ثنائية (0 و1)، ومنها بتتبني البوابات المنطقية ووحدة الـ <span class="en">ALU</span>.</p>
 
 
 
@@ -1536,22 +1287,17 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">Transistor</dt>
-                <dd>مفتاح إلكتروني مجهري يشكل اللبنة الأساسية للدوائر الرقمية.</dd>
+                <dt class="en">Transistor</dt><dd>مفتاح إلكتروني مجهري يشكل اللبنة الأساسية للدوائر الرقمية.</dd>
 
-                <dt class="en">Binary (0 &amp; 1)</dt>
-                <dd>تمثيل منطقي لنطاقات الجهد الكهربائي في الدوائر الإلكترونية.</dd>
+                <dt class="en">Binary (0 &amp; 1)</dt><dd>تمثيل منطقي لنطاقات الجهد الكهربائي في الدوائر الإلكترونية.</dd>
 
-                <dt class="en">Logic Gate</dt>
-                <dd>دائرة مكونة من عدة ترانزستورات تنفذ عمليات منطقية (AND, OR, NOT).</dd>
+                <dt class="en">Logic Gate</dt><dd>دائرة مكونة من عدة ترانزستورات تنفذ عمليات منطقية (AND, OR, NOT).</dd>
 
-                <dt class="en">ALU (Arithmetic Logic Unit)</dt>
-                <dd>الجزء المسؤول عن العمليات الحسابية والمنطقية داخل المعالج.</dd>
+                <dt class="en">ALU (Arithmetic Logic Unit)</dt><dd>الجزء المسؤول عن العمليات الحسابية والمنطقية داخل المعالج.</dd>
 
               </dl>
 
-              <p class="lx-explore"><strong class="en">CMOS Technology &amp; NAND Gates:</strong> إزاي ممكن نبني أي
-                كمبيوتر باستخدام بوابات <span class="en">NAND</span> بس، وباستهلاك طاقة قليل.</p>
+              <p class="lx-explore"><strong class="en">CMOS Technology &amp; NAND Gates:</strong> إزاي ممكن نبني أي كمبيوتر باستخدام بوابات <span class="en">NAND</span> بس، وباستهلاك طاقة قليل.</p>
 
             </details>
 
@@ -1561,8 +1307,7 @@
 
               <p class="lx-transition">دلوقتي عندنا كل القطع. نشوف إزاي المعالج بينفّذ الأوامر خطوة بخطوة.</p>
 
-              <button type="button" class="btn btn-primary" data-next-tab="tab-8">الخطوة التالية <i
-                  class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+              <button type="button" class="btn btn-primary" data-next-tab="tab-8">الخطوة التالية <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
 
             </div>
 
@@ -1578,36 +1323,29 @@
 
           <div class="lx-step glass-card">
 
-            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف
-                  الخطوة:</strong> تفهم دورة تنفيذ الأمر جوه المعالج وتتبّع مسار مبسّط من الكيبورد للشاشة.</span></p>
+            <p class="lx-objective"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span><strong>هدف الخطوة:</strong> تفهم دورة تنفيذ الأمر جوه المعالج وتتبّع مسار مبسّط من الكيبورد للشاشة.</span></p>
 
             <h3 class="lx-title">The Instruction Cycle</h3>
 
             <p class="lx-sub">رحلة الأمر جوه الجهاز</p>
 
-            <p class="lx-hook">لما بتضغط حرف <span class="en">A</span> على الكيبورد، الحرف بيظهر على الشاشة في أجزاء من
-              الثانية. يا ترى إيه الرحلة اللي الإشارة دي بتمشيها؟</p>
+            <p class="lx-hook">لما بتضغط حرف <span class="en">A</span> على الكيبورد، الحرف بيظهر على الشاشة في أجزاء من الثانية. يا ترى إيه الرحلة اللي الإشارة دي بتمشيها؟</p>
 
 
 
             <div class="lx-text">
 
-              <p>المعالج بيكرر 4 خطوات طول الوقت، اسمها <strong class="en">Instruction Execution Cycle</strong> (نموذج
-                تعليمي مبسط):</p>
+              <p>المعالج بيكرر 4 خطوات طول الوقت، اسمها <strong class="en">Instruction Execution Cycle</strong> (نموذج تعليمي مبسط):</p>
 
               <ol class="lx-flow">
 
-                <li><strong class="en">Fetch</strong> (الجلب): بيقرأ الأمر الجاي من الذاكرة (<span
-                    class="en">RAM</span>).</li>
+                <li><strong class="en">Fetch</strong> (الجلب): بيقرأ الأمر الجاي من الذاكرة (<span class="en">RAM</span>).</li>
 
-                <li><strong class="en">Decode</strong> (التحليل): الـ <span class="en">Control Unit</span> بتفك شفرة
-                  الأمر وتحدد المطلوب.</li>
+                <li><strong class="en">Decode</strong> (التحليل): الـ <span class="en">Control Unit</span> بتفك شفرة الأمر وتحدد المطلوب.</li>
 
-                <li><strong class="en">Execute</strong> (التنفيذ): الـ <span class="en">ALU</span> أو وحدة تانية بتنفذ
-                  العملية الحسابية أو المنطقية.</li>
+                <li><strong class="en">Execute</strong> (التنفيذ): الـ <span class="en">ALU</span> أو وحدة تانية بتنفذ العملية الحسابية أو المنطقية.</li>
 
-                <li><strong class="en">Store / Write-back</strong> (التخزين): بيكتب النتيجة في الـ <span
-                    class="en">Registers</span> أو في الذاكرة.</li>
+                <li><strong class="en">Store / Write-back</strong> (التخزين): بيكتب النتيجة في الـ <span class="en">Registers</span> أو في الذاكرة.</li>
 
               </ol>
 
@@ -1631,8 +1369,7 @@
 
               <p class="lx-cycleviz-note">وبعد التخزين بيرجع المعالج يجلب الأمر اللي بعده.</p>
 
-              <button type="button" class="btn btn-glass lx-cycle-toggle" id="cycleToggle" aria-pressed="false">إيقاف
-                الحركة</button>
+              <button type="button" class="btn btn-glass lx-cycle-toggle" id="cycleToggle" aria-pressed="false">إيقاف الحركة</button>
 
             </div>
 
@@ -1640,8 +1377,7 @@
 
             <div class="lx-card lx-analogy">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-kitchen-set" aria-hidden="true"></i> تشبيه: خط الطهي في
-                المطعم</h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-kitchen-set" aria-hidden="true"></i> تشبيه: خط الطهي في المطعم</h4>
 
               <ul class="lx-list">
 
@@ -1655,9 +1391,7 @@
 
               </ul>
 
-              <p class="lx-limit"><strong>حدود التشبيه:</strong> المعالجات الحديثة بتبدأ الأمر الجاي قبل ما اللي قبله
-                يخلص (<span class="en">Pipelining</span>)، ومعاها أكتر من <span class="en">Core</span> بيشتغلوا مع بعض،
-                مش خطوة ورا خطوة بترتيب بطيء.</p>
+              <p class="lx-limit"><strong>حدود التشبيه:</strong> المعالجات الحديثة بتبدأ الأمر الجاي قبل ما اللي قبله يخلص (<span class="en">Pipelining</span>)، ومعاها أكتر من <span class="en">Core</span> بيشتغلوا مع بعض، مش خطوة ورا خطوة بترتيب بطيء.</p>
 
             </div>
 
@@ -1669,37 +1403,33 @@
 
               <p class="lx-q" id="seq-q">اضغط على المراحل بالترتيب الصحيح لتنفيذ أي أمر.</p>
 
-              <div id="seq-sort" data-order="fetch,decode,execute,store"
-                data-ok="أداء رائع! ده الترتيب الصحيح لدورة المعالج."
-                data-bad="خلّينا نراجع الترتيب: الأول جلب الأمر (Fetch)، بعدين تحليله (Decode)، بعدين تنفيذه (Execute)، وأخيراً تخزين الناتج (Store).">
+              <div id="seq-sort"
+
+                   data-order="fetch,decode,execute,store"
+
+                   data-ok="أداء رائع! ده الترتيب الصحيح لدورة المعالج."
+
+                   data-bad="خلّينا نراجع الترتيب: الأول جلب الأمر (Fetch)، بعدين تحليله (Decode)، بعدين تنفيذه (Execute)، وأخيراً تخزين الناتج (Store).">
 
                 <ol class="lx-slots" aria-label="ترتيبك">
 
-                  <li class="lx-slot" data-slot="0"></li>
-                  <li class="lx-slot" data-slot="1"></li>
-                  <li class="lx-slot" data-slot="2"></li>
-                  <li class="lx-slot" data-slot="3"></li>
+                  <li class="lx-slot" data-slot="0"></li><li class="lx-slot" data-slot="1"></li><li class="lx-slot" data-slot="2"></li><li class="lx-slot" data-slot="3"></li>
 
                 </ol>
 
                 <div class="lx-pool" role="group" aria-labelledby="seq-q">
 
-                  <button type="button" class="lx-chip lx-card-chip" data-step="execute"><span class="en">Execute</span>
-                    · تنفيذ</button>
+                  <button type="button" class="lx-chip lx-card-chip" data-step="execute"><span class="en">Execute</span> · تنفيذ</button>
 
-                  <button type="button" class="lx-chip lx-card-chip" data-step="fetch"><span class="en">Fetch</span> ·
-                    جلب</button>
+                  <button type="button" class="lx-chip lx-card-chip" data-step="fetch"><span class="en">Fetch</span> · جلب</button>
 
-                  <button type="button" class="lx-chip lx-card-chip" data-step="store"><span class="en">Store</span> ·
-                    تخزين</button>
+                  <button type="button" class="lx-chip lx-card-chip" data-step="store"><span class="en">Store</span> · تخزين</button>
 
-                  <button type="button" class="lx-chip lx-card-chip" data-step="decode"><span class="en">Decode</span> ·
-                    تحليل</button>
+                  <button type="button" class="lx-chip lx-card-chip" data-step="decode"><span class="en">Decode</span> · تحليل</button>
 
                 </div>
 
-                <button type="button" class="btn btn-glass lx-reset" id="seq-reset" hidden><i
-                    class="fa-solid fa-rotate-left" aria-hidden="true"></i> جرّب تاني</button>
+                <button type="button" class="btn btn-glass lx-reset" id="seq-reset" hidden><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> جرّب تاني</button>
 
                 <div class="lx-feedback" role="status" aria-live="polite" hidden></div>
 
@@ -1711,67 +1441,51 @@
 
             <div class="lx-card" data-select-group id="journey-group">
 
-              <h4 class="lx-task-title"><i class="fa-solid fa-route" aria-hidden="true"></i> رحلة ضغطة حرف <span
-                  class="en">A</span> (مبسّطة)</h4>
+              <h4 class="lx-task-title"><i class="fa-solid fa-route" aria-hidden="true"></i> رحلة ضغطة حرف <span class="en">A</span> (مبسّطة)</h4>
 
               <p class="lx-diagram-hint">اضغط على أي محطة عشان تشوف اللي بيحصل فيها.</p>
 
               <ol class="lx-journey">
 
-                <li><button type="button" class="lx-station" data-target="st-kb" aria-pressed="false"><span
-                      class="en">Keyboard</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-kb" aria-pressed="false"><span class="en">Keyboard</span></button></li>
 
-                <li><button type="button" class="lx-station" data-target="st-os" aria-pressed="false"><span
-                      class="en">Driver / OS</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-os" aria-pressed="false"><span class="en">Driver / OS</span></button></li>
 
-                <li><button type="button" class="lx-station" data-target="st-ram" aria-pressed="false"><span
-                      class="en">RAM</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-ram" aria-pressed="false"><span class="en">RAM</span></button></li>
 
-                <li><button type="button" class="lx-station" data-target="st-cpu" aria-pressed="false"><span
-                      class="en">CPU</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-cpu" aria-pressed="false"><span class="en">CPU</span></button></li>
 
-                <li><button type="button" class="lx-station" data-target="st-gpu" aria-pressed="false"><span
-                      class="en">GPU</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-gpu" aria-pressed="false"><span class="en">GPU</span></button></li>
 
-                <li><button type="button" class="lx-station" data-target="st-screen" aria-pressed="false"><span
-                      class="en">Screen</span></button></li>
+                <li><button type="button" class="lx-station" data-target="st-screen" aria-pressed="false"><span class="en">Screen</span></button></li>
 
               </ol>
 
               <div class="lx-info" id="st-kb" hidden>الضغط على الزر بيولّد إشارة كهربائية.</div>
 
-              <div class="lx-info" id="st-os" hidden>نظام التشغيل (عن طريق الـ <span class="en">Driver</span>) بيستقبل
-                الإشارة وبيحط كود الحرف في الـ <span class="en">RAM</span>.</div>
+              <div class="lx-info" id="st-os" hidden>نظام التشغيل (عن طريق الـ <span class="en">Driver</span>) بيستقبل الإشارة وبيحط كود الحرف في الـ <span class="en">RAM</span>.</div>
 
-              <div class="lx-info" id="st-ram" hidden>كود الحرف بيستنى في الـ <span class="en">RAM</span> لحد ما التطبيق
-                يقراه.</div>
+              <div class="lx-info" id="st-ram" hidden>كود الحرف بيستنى في الـ <span class="en">RAM</span> لحد ما التطبيق يقراه.</div>
 
-              <div class="lx-info" id="st-cpu" hidden>التطبيق المفتوح بيقرأ الحرف وبيعالج النص، والـ <span
-                  class="en">CPU</span> بينفّذ تعليماته بدورة الأربع خطوات:
+              <div class="lx-info" id="st-cpu" hidden>التطبيق المفتوح بيقرأ الحرف وبيعالج النص، والـ <span class="en">CPU</span> بينفّذ تعليماته بدورة الأربع خطوات:
 
-                <span class="lx-cycle" id="journey-cycle" aria-label="دورة المعالج"><span
-                    class="lx-cycle-chip en">Fetch</span><span class="lx-cycle-chip en">Decode</span><span
-                    class="lx-cycle-chip en">Execute</span><span class="lx-cycle-chip en">Store</span></span>
+                <span class="lx-cycle" id="journey-cycle" aria-label="دورة المعالج"><span class="lx-cycle-chip en">Fetch</span><span class="lx-cycle-chip en">Decode</span><span class="lx-cycle-chip en">Execute</span><span class="lx-cycle-chip en">Store</span></span>
 
               </div>
 
-              <div class="lx-info" id="st-gpu" hidden>بعد كده بتتبعت أوامر لكارت الشاشة (<span class="en">GPU</span>)
-                يحوّل الحرف لنقط ضوئية (<span class="en">Pixels</span>).</div>
+              <div class="lx-info" id="st-gpu" hidden>بعد كده بتتبعت أوامر لكارت الشاشة (<span class="en">GPU</span>) يحوّل الحرف لنقط ضوئية (<span class="en">Pixels</span>).</div>
 
               <div class="lx-info" id="st-screen" hidden>الحرف يظهر على الشاشة!</div>
 
-              <p class="lx-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <span>دي رحلة مبسطة عشان
-                  نفهم الفكرة. في الواقع فيه تفاصيل هندسية أعمق بتحصل في كل محطة.</span></p>
+              <p class="lx-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <span>دي رحلة مبسطة عشان نفهم الفكرة. في الواقع فيه تفاصيل هندسية أعمق بتحصل في كل محطة.</span></p>
 
             </div>
 
 
 
-            <p class="lx-takeaway"><strong>الخلاصة:</strong> المعالج بينفذ كل أمر عن طريق دورة منتظمة بتبدأ بالجلب
-              وبتنتهي بالتخزين.</p>
+            <p class="lx-takeaway"><strong>الخلاصة:</strong> المعالج بينفذ كل أمر عن طريق دورة منتظمة بتبدأ بالجلب وبتنتهي بالتخزين.</p>
 
-            <p class="lx-recap">باختصار: المعالج بينفذ الأوامر عن طريق دورة جلب وتحليل وتنفيذ وتخزين، وطبقات النظام
-              بتتعاون عشان تعرض النتيجة على الشاشة.</p>
+            <p class="lx-recap">باختصار: المعالج بينفذ الأوامر عن طريق دورة جلب وتحليل وتنفيذ وتخزين، وطبقات النظام بتتعاون عشان تعرض النتيجة على الشاشة.</p>
 
 
 
@@ -1781,20 +1495,15 @@
 
               <dl class="lx-terms">
 
-                <dt class="en">Fetch-Decode-Execute-Store</dt>
-                <dd>الدورة التعليمية الرباعية الأساسية لتنفيذ كل أمر داخل المعالج.</dd>
+                <dt class="en">Fetch-Decode-Execute-Store</dt><dd>الدورة التعليمية الرباعية الأساسية لتنفيذ كل أمر داخل المعالج.</dd>
 
-                <dt class="en">Control Unit (CU)</dt>
-                <dd>الوحدة المسؤولة عن فك الشفرات وتوجيه إشارات التحكم داخل المعالج.</dd>
+                <dt class="en">Control Unit (CU)</dt><dd>الوحدة المسؤولة عن فك الشفرات وتوجيه إشارات التحكم داخل المعالج.</dd>
 
-                <dt class="en">Execution Path</dt>
-                <dd>وصف تعليمي من NEXUS للمسار المبسط لنقل البيانات من الإدخال إلى الإخراج (ليس مصطلحاً صناعياً
-                  قياسياً).</dd>
+                <dt class="en">Execution Path</dt><dd>وصف تعليمي من NEXUS للمسار المبسط لنقل البيانات من الإدخال إلى الإخراج (ليس مصطلحاً صناعياً قياسياً).</dd>
 
               </dl>
 
-              <p class="lx-explore"><strong class="en">Instruction Pipelining, Interrupts &amp; Framebuffers:</strong>
-                التفاصيل الهندسية العميقة للمعالجات الحديثة، وإزاي كروت الشاشة بتشتغل بالتوازي.</p>
+              <p class="lx-explore"><strong class="en">Instruction Pipelining, Interrupts &amp; Framebuffers:</strong> التفاصيل الهندسية العميقة للمعالجات الحديثة، وإزاي كروت الشاشة بتشتغل بالتوازي.</p>
 
             </details>
 
@@ -1804,8 +1513,7 @@
 
               <p class="lx-transition">خلصت الرحلة. راجع الصورة الكاملة في الفيديو قبل الاختبار.</p>
 
-              <a href="#video-summary" class="btn btn-primary">شاهد الملخص <i class="fa-solid fa-arrow-left"
-                  aria-hidden="true"></i></a>
+              <a href="#video-summary" class="btn btn-primary">شاهد الملخص <i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
 
             </div>
 
@@ -1840,9 +1548,18 @@
 
           <div class="video-frame">
 
-            <iframe src="https://www.youtube.com/embed/9irWJhP2viI?si=xIu1LFz9zO3dLmCM"
-              title="NEXUS Level 1 Session 01 Summary" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            <iframe 
+
+              src="https://www.youtube.com/embed/9irWJhP2viI?si=xIu1LFz9zO3dLmCM" 
+
+              title="NEXUS Level 1 Session 01 Summary"
+
+              loading="lazy"
+
+              referrerpolicy="strict-origin-when-cross-origin" 
+
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
               allowfullscreen>
 
             </iframe>
@@ -1851,9 +1568,7 @@
 
         </div>
 
-        <p class="video-fallback"><a href="https://www.youtube.com/watch?v=9irWJhP2viI" target="_blank"
-            rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i> لو الفيديو مش بيشتغل هنا،
-            افتحه على YouTube</a></p>
+        <p class="video-fallback"><a href="https://www.youtube.com/watch?v=9irWJhP2viI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" aria-hidden="true"></i> لو الفيديو مش بيشتغل هنا، افتحه على YouTube</a></p>
 
       </div>
 
@@ -1891,8 +1606,7 @@
 
               <h3>NEXUS Session 01 Assessment</h3>
 
-              <p>Please enter your full name and phone number to start the evaluation. Your responses will be recorded
-                upon submission.</p>
+              <p>Please enter your full name and phone number to start the evaluation. Your responses will be recorded upon submission.</p>
 
             </div>
 
@@ -1902,11 +1616,9 @@
 
               <div class="form-group">
 
-                <label for="studentFullName"><i class="fa-solid fa-user"></i> Full Name <span
-                    class="required-star">*</span></label>
+                <label for="studentFullName"><i class="fa-solid fa-user"></i> Full Name <span class="required-star">*</span></label>
 
-                <input type="text" id="studentFullName" name="fullName" placeholder="e.g. John Doe / أحمد محمد"
-                  autocomplete="name" required>
+                <input type="text" id="studentFullName" name="fullName" placeholder="e.g. John Doe / أحمد محمد" autocomplete="name" required>
 
               </div>
 
@@ -1914,11 +1626,9 @@
 
               <div class="form-group">
 
-                <label for="studentPhone"><i class="fa-solid fa-phone"></i> Phone Number <span
-                    class="required-star">*</span></label>
+                <label for="studentPhone"><i class="fa-solid fa-phone"></i> Phone Number <span class="required-star">*</span></label>
 
-                <input type="tel" id="studentPhone" name="phone" placeholder="e.g. 01012345678" autocomplete="tel"
-                  required>
+                <input type="tel" id="studentPhone" name="phone" placeholder="e.g. 01012345678" autocomplete="tel" required>
 
               </div>
 
@@ -1952,8 +1662,7 @@
 
               <div class="quiz-meta-info">
 
-                <span class="quiz-student-tag" id="quizStudentTag"><i class="fa-solid fa-user-graduate"></i>
-                  Student</span>
+                <span class="quiz-student-tag" id="quizStudentTag"><i class="fa-solid fa-user-graduate"></i> Student</span>
 
                 <span class="question-number" id="questionNumber">Question 1 of 10</span>
 
@@ -1965,8 +1674,7 @@
 
 
 
-            <div class="quiz-progress-bar" role="progressbar" id="quizProgressBar" aria-valuemin="0" aria-valuemax="100"
-              aria-valuenow="10">
+            <div class="quiz-progress-bar" role="progressbar" id="quizProgressBar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10">
 
               <div class="quiz-progress-fill" id="quizProgressFill"></div>
 
@@ -1990,16 +1698,13 @@
 
             <div class="quiz-actions-bar">
 
-              <button class="btn btn-glass" id="prevBtn" type="button"><i class="fa-solid fa-arrow-left"></i>
-                Previous</button>
+              <button class="btn btn-glass" id="prevBtn" type="button"><i class="fa-solid fa-arrow-left"></i> Previous</button>
 
               <div class="quiz-action-right">
 
-                <button class="btn btn-glass" id="nextBtn" type="button">Next <i
-                    class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn btn-glass" id="nextBtn" type="button">Next <i class="fa-solid fa-arrow-right"></i></button>
 
-                <button class="btn btn-primary hidden" id="submitQuizBtn" type="button"><i
-                    class="fa-solid fa-paper-plane"></i> Submit Assessment</button>
+                <button class="btn btn-primary hidden" id="submitQuizBtn" type="button"><i class="fa-solid fa-paper-plane"></i> Submit Assessment</button>
 
               </div>
 
@@ -2041,8 +1746,7 @@
 
               <h3 class="result-title" id="resultTitle">Assessment Completed!</h3>
 
-              <p class="result-subtitle" id="resultSubtitle">Your responses have been locked and graded successfully.
-              </p>
+              <p class="result-subtitle" id="resultSubtitle">Your responses have been locked and graded successfully.</p>
 
 
 
@@ -2162,8 +1866,7 @@
 
   <div class="nexus-ai-widget" id="nexusAiWidget">
 
-    <button type="button" class="chat-toggle-btn" id="chatToggleBtn" aria-label="فتح مساعد NEXUS" aria-expanded="false"
-      aria-controls="chatWindow">
+    <button type="button" class="chat-toggle-btn" id="chatToggleBtn" aria-label="فتح مساعد NEXUS" aria-expanded="false" aria-controls="chatWindow">
 
       <i class="fa-solid fa-robot" aria-hidden="true"></i>
 
@@ -2191,8 +1894,7 @@
 
         </div>
 
-        <button type="button" class="chat-close-btn" id="chatCloseBtn" aria-label="إغلاق المساعد"><i
-            class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <button type="button" class="chat-close-btn" id="chatCloseBtn" aria-label="إغلاق المساعد"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
 
       </div>
 
@@ -2212,11 +1914,9 @@
 
       <div class="chat-input-area">
 
-        <input type="text" id="chatInput" placeholder="اكتب سؤالك عن الدرس…" aria-label="اكتب سؤالك عن الدرس"
-          autocomplete="off">
+        <input type="text" id="chatInput" placeholder="اكتب سؤالك عن الدرس…" aria-label="اكتب سؤالك عن الدرس" autocomplete="off">
 
-        <button type="button" id="sendMessageBtn" aria-label="إرسال"><i class="fa-solid fa-paper-plane"
-            aria-hidden="true"></i></button>
+        <button type="button" id="sendMessageBtn" aria-label="إرسال"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
 
       </div>
 
@@ -2238,21 +1938,16 @@
       <div class="footer-social-section">
         <h4 class="footer-heading">تابعنا</h4>
         <div class="social-links">
-          <a href="https://www.facebook.com/nexus.software1/" target="_blank" rel="noopener noreferrer"
-            class="social-icon facebook" title="NEXUS Facebook" aria-label="NEXUS Facebook">
+          <a href="https://www.facebook.com/nexus.software1/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="NEXUS Facebook" aria-label="NEXUS Facebook">
             <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
           </a>
-          <a href="https://www.instagram.com/nexus_sw1/" target="_blank" rel="noopener noreferrer"
-            class="social-icon instagram" title="NEXUS Instagram" aria-label="NEXUS Instagram">
+          <a href="https://www.instagram.com/nexus_sw1/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="NEXUS Instagram" aria-label="NEXUS Instagram">
             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
           </a>
-          <a href="https://www.linkedin.com/company/nexus-sw/about/" target="_blank" rel="noopener noreferrer"
-            class="social-icon linkedin" title="NEXUS LinkedIn" aria-label="NEXUS LinkedIn">
+          <a href="https://www.linkedin.com/company/nexus-sw/about/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" title="NEXUS LinkedIn" aria-label="NEXUS LinkedIn">
             <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
           </a>
-          <a href="https://api.whatsapp.com/send/?phone=201042942654&text&type=phone_number&app_absent=0"
-            target="_blank" rel="noopener noreferrer" class="social-icon whatsapp" title="NEXUS WhatsApp"
-            aria-label="NEXUS WhatsApp">
+          <a href="https://api.whatsapp.com/send/?phone=201042942654&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp" title="NEXUS WhatsApp" aria-label="NEXUS WhatsApp">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </a>
         </div>
@@ -2264,8 +1959,7 @@
 
         <p class="copyright-notice">&copy; 2026 NEXUS. All rights reserved.</p>
 
-        <p class="developer-credit">Developed by <a href="https://www.facebook.com/amr.sadek.710" target="_blank"
-            rel="noopener noreferrer" title="Amr Sadek Facebook">Amr Sadek</a></p>
+        <p class="developer-credit">Developed by <a href="https://www.facebook.com/amr.sadek.710" target="_blank" rel="noopener noreferrer" title="Amr Sadek Facebook">Amr Sadek</a></p>
 
       </div>
 

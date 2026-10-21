@@ -321,7 +321,16 @@
   function initProgressLine() {
     const fill = $('#lxTrackFill');
     if (!fill) return;
-    const set = index => { fill.style.width = ((index + 1) / TOTAL_STEPS * 100) + '%'; };
+    const track = fill.parentElement;
+    const label = $('#lxStepLabel');
+    const set = index => {
+      const n = index + 1;
+      const text = 'الخطوة ' + n + ' من ' + TOTAL_STEPS;
+      fill.style.width = (n / TOTAL_STEPS * 100) + '%';
+      track.setAttribute('aria-valuenow', String(n));
+      track.setAttribute('aria-valuetext', text);
+      if (label) label.textContent = text;
+    };
     set(0);
     document.addEventListener('lx:tab', e => set(e.detail.index));
   }
@@ -366,6 +375,33 @@
     play();
   }
 
+  /* ---------- Page scroll progress ---------- */
+  function initScrollProgress() {
+    const bar = $('#scrollProgress');
+    if (!bar) return;
+    let queued = false;
+
+    function update() {
+      queued = false;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      bar.style.transform = 'scaleX(' + ratio.toFixed(4) + ')';
+    }
+    function request() {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', request, { passive: true });
+    window.addEventListener('resize', request);
+    window.addEventListener('load', request);
+    // Content height changes (tab switches, reveals, quiz views, media) without any scroll event.
+    if ('ResizeObserver' in window) new ResizeObserver(request).observe(document.body);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(request);
+    update();
+  }
+
   /* ---------- Init ---------- */
   document.addEventListener('DOMContentLoaded', () => {
     $$('.en').forEach(el => { if (!el.hasAttribute('lang')) el.setAttribute('lang', 'en'); });
@@ -384,5 +420,6 @@
     initCycleDemo();
     initProgressLine();
     initScrollSpy();
+    initScrollProgress();
   });
 })();
